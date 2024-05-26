@@ -1,0 +1,98 @@
+{
+  "school": "EARTH",
+  "range": 20.0,
+  "learn": {
+    "tier": 4
+  },
+  "cast": {
+    "animation": "more_rpg_classes:two_handed_ground_channeling",
+    "sound": {
+      "id": "more_rpg_classes:earth_magic_impact2",
+      "volume": 0.5
+    },
+    "duration": 5,
+    "particles": [
+      {
+        "particle_id": "campfire_cosy_smoke",
+        "angle": 360.0,
+        "shape": "CIRCLE",
+        "origin": "FEET",
+        "count": 10,
+        "min_speed": 0.001,
+        "max_speed": 0.1
+      },
+      {
+        "particle_id": "more_rpg_classes:stone_particle",
+        "shape": "PIPE",
+        "origin": "FEET",
+        "count": 3.0,
+        "min_speed": 0.01,
+        "max_speed": 0.05
+      }
+    ],
+    "channel_ticks": 10
+  },
+  "release": {
+    "custom_impact": true,
+    "target": {
+      "type": "AREA",
+      "area": {
+        "distance_dropoff": "SQUARED",
+        "angle_degrees": 360.0
+      }
+    }
+  },
+  "impact": [
+    {
+      "action": {
+        "type": "DAMAGE",
+        "damage": {
+          "spell_power_coefficient": 0.9,
+          "knockback": 0.5
+        }
+      },
+      "particles": [
+        {
+          "particle_id": "campfire_cosy_smoke",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 5.0,
+          "min_speed": 0.005,
+          "max_speed": 0.01,
+          "angle": 360.0
+        },
+        {
+          "particle_id": "more_rpg_classes:stone_particle",
+          "shape": "PIPE",
+          "origin": "FEET",
+          "count": 1.0,
+          "min_speed": 0.01,
+          "max_speed": 0.05
+        }
+      ],
+      "sound": {
+        "id": "block.pointed_dripstone.break",
+        "volume": 1.5
+      }
+    },
+    {
+      "action": {
+        "type": "STATUS_EFFECT",
+        "status_effect": {
+          "effect_id": "elemental_wizards_rpg:trembling",
+          "amplifier": 3,
+          "duration": 8,
+          "apply_mode": "ADD",
+          "show_particles": false
+        }
+      }
+    }
+  ],
+  "cost": {
+    "exhaust": 0.3,
+    "item_id": "more_rpg_classes:terra_stone",
+    "cooldown_duration": 30.0,
+    "cooldown_proportional": true,
+    "cooldown_haste_affected": true
+  }
+}

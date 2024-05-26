@@ -1,0 +1,30 @@
+package net.elemental_wizards_rpg.client.effect;
+
+import net.minecraft.entity.LivingEntity;
+import net.spell_engine.api.effect.CustomParticleStatusEffect;
+import net.spell_engine.api.spell.ParticleBatch;
+import net.spell_engine.particle.ParticleHelper;
+
+public class BubbleFoamParticleSpawner implements CustomParticleStatusEffect.Spawner{
+
+    public static final ParticleBatch particles = new ParticleBatch(
+            "more_rpg_classes:bubble",
+            ParticleBatch.Shape.SPHERE,
+            ParticleBatch.Origin.CENTER,
+            null,
+            1,
+            0.001F,
+            0.1F,
+            0);
+
+    @Override
+    public void spawnParticles(LivingEntity livingEntity, int amplifier) {
+        var world = livingEntity.getWorld();
+        if (world.isClient) {
+            var scaledParticles = new ParticleBatch(particles);
+            scaledParticles.count *= (amplifier + 1);
+            scaledParticles.max_speed *= livingEntity.getScaleFactor();
+            ParticleHelper.play(world, livingEntity, scaledParticles);
+        }
+    }
+}

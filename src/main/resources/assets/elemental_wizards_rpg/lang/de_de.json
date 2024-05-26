@@ -1,0 +1,86 @@
+{
+  "itemGroup.elemental_wizards_rpg.general": "Elemental Wizards",
+
+  "item.elemental_wizards_rpg.elemental_essence": "Elementaressenz",
+
+  "item.elemental_wizards_rpg.aqua_spell_book": "Geheimnisse des Ozeans",
+  "item.elemental_wizards_rpg.terra_spell_book": "Berggipfeltagebuch",
+
+  "item.elemental_wizards_rpg.wand_kelp": "Seetang Rute",
+  "item.elemental_wizards_rpg.wand_aqua": "Aqua Rute",
+  "item.elemental_wizards_rpg.wand_netherite_aqua": "Netherite Aqua Rute",
+  "item.elemental_wizards_rpg.staff_aqua": "Aqua Stab",
+  "item.elemental_wizards_rpg.staff_netherite_aqua": "Netherite Aqua Stab",
+
+  "item.elemental_wizards_rpg.elemental_head": "Elementar Lehrlings Hut",
+  "item.elemental_wizards_rpg.elemental_chest": "Elementar Lehrlings Robe Oben",
+  "item.elemental_wizards_rpg.elemental_legs": "Elementar Lehrlings Robe Unten",
+  "item.elemental_wizards_rpg.elemental_feet": "Elementar Lehrlings Stiefel",
+
+  "item.elemental_wizards_rpg.kelp_head": "Aqua Hut",
+  "item.elemental_wizards_rpg.kelp_chest": "Aqua obe Oben",
+  "item.elemental_wizards_rpg.kelp_legs": "Aqua Robe Unten",
+  "item.elemental_wizards_rpg.kelp_feet": "Aqua Stiefel",
+
+  "item.elemental_wizards_rpg.dripstone_head": "Terra Hut",
+  "item.elemental_wizards_rpg.dripstone_chest": "Terra obe Oben",
+  "item.elemental_wizards_rpg.dripstone_legs": "Terra Robe Unten",
+  "item.elemental_wizards_rpg.dripstone_feet": "Terra Stiefel",
+
+  "item.elemental_wizards_rpg.river_head": "Fluss Kaputze",
+  "item.elemental_wizards_rpg.river_chest": "Fluss Robe Oben",
+  "item.elemental_wizards_rpg.river_legs": "Fluss Robe Unten",
+  "item.elemental_wizards_rpg.river_feet": "Fluss Stiefel",
+
+  "effect.elemental_wizards_rpg.soaked": "Durchnässt",
+  "effect.elemental_wizards_rpg.soaked.description": "  Das Ziel wird durchnässt, Feuer wird gelöscht und das Ziel wird anfälliger für Frost- und Blitzzauberschaden.",
+  "effect.elemental_wizards_rpg.cleansing_water": "Reines Wasser",
+  "effect.elemental_wizards_rpg.cleansing_water.description": "Weihwasser, das Feuer löscht und Leben regeneriert. Wenn das Ziel über volles Leben hat, werden negative Effekte entfernt.",
+  "effect.elemental_wizards_rpg.bubble_foam": "Blubber Schild",
+  "effect.elemental_wizards_rpg.bubble_foam.description": "Schiebt Feinde bei Kontakt vom Spieler weg.",
+  "effect.elemental_wizards_rpg.stone_flesh": "Steinhaut",
+  "effect.elemental_wizards_rpg.stone_flesh.description": "Gibt dem Benutzer Rüstung und Rüstungshärte, falls du volle Herzen hast, wird der nächste Angriff um 50% reduziert.",
+  "effect.elemental_wizards_rpg.trembling": "Erzittert",
+  "effect.elemental_wizards_rpg.trembling.description": "Verlangsamt das Ziel, wenn das Effektlevel 4 beträgt, wird das Ziel betäubt.",
+
+  "spell.elemental_wizards_rpg.aqua_splash.name": "Sprudelwasser",
+  "spell.elemental_wizards_rpg.aqua_splash.description": "Heilt dich um {heal} oder greift das Ziel an und verursacht {damage} Wasserzauberschaden.",
+  "spell.elemental_wizards_rpg.aqua_water_whip.name": "Wasserpeitsche",
+  "spell.elemental_wizards_rpg.aqua_water_whip.description": "Schnelle Wasserpeitsche, die {damage} Wasserzauberschaden verursacht und das Ziel durchnässt.",
+  "spell.elemental_wizards_rpg.aqua_bubble_beam.name": "Blubbstrahl",
+  "spell.elemental_wizards_rpg.aqua_bubble_beam.description": "Erzeugt einen Blubbstrahl, der Feinde {damage} Wasserzauberschaden verursacht und Freunde beschützt.",
+  "spell.elemental_wizards_rpg.aqua_springwater.name": "Quellwasser",
+  "spell.elemental_wizards_rpg.aqua_springwater.description": "Beschwört Wasserquellen, heilt {heal} und reinigt Freunde und fügt Zielen {damage} Wasserzauberschaden zu.",
+  "spell.elemental_wizards_rpg.aqua_hydro_beam.name": "Hydropumpe",
+  "spell.elemental_wizards_rpg.aqua_hydro_beam.description": "Kanalisiert einen Hochdruckstrahl, der jede Sekunde {damage} Wasserschaden verursacht und Ziele durchnässt.",
+
+  "spell.elemental_wizards_rpg.terra_stone_throw.name": "Steinwurf",
+  "spell.elemental_wizards_rpg.terra_stone_throw.description": "Das Projektil verursacht {damage} Erdzauberschaden und explodiert bei Kontakt und fügt Zielen in der Nähe Schaden zu.",
+  "spell.elemental_wizards_rpg.terra_stone_spear.name": "Steinspeer",
+  "spell.elemental_wizards_rpg.terra_stone_spear.description": "Das Projektil verursacht {damage} Erdzauberschaden und verursacht Bluten, explodiert bei Kontakt und schadet nahen Zielen.",
+  "spell.elemental_wizards_rpg.terra_stone_flesh.name": "Steinhaut",
+  "spell.elemental_wizards_rpg.terra_stone_flesh.description": "Erhöht die Rüstung und Rüstungsfestigkeit. Wenn Sie alle Herzen haben, verursacht der nächste Angriff die Hälfte des Schadens.",
+  "spell.elemental_wizards_rpg.terra_drip_circle.name": "Terra-Kreis",
+  "spell.elemental_wizards_rpg.terra_drip_circle.description": "Erzeugt zwei Tropfsteinkreise, die {damage} Erdzauberschaden verursachen und Blutung hinzufügen.",
+  "spell.elemental_wizards_rpg.terra_earthquake.name": "Erdbeben",
+  "spell.elemental_wizards_rpg.terra_earthquake.description": "Verursacht {damage} Erdzauberschaden, schleudert Ziele herum und fügt einen Zittereffekt hinzu.",
+
+  "advancements.rpg_classes.water_rune.title": "Weg des Wassers",
+  "advancements.rpg_classes.water_rune.description": "Erhalte eine Wasser Rune",
+  "advancements.more_rpg_content.water_spells.title": "Beruhigendes Wasser",
+  "advancements.more_rpg_content.water_spells.description": "Schalte alle Wasser Zauber frei",
+
+  "advancements.rpg_classes.earth_rune.title": "Weg der Erde",
+  "advancements.rpg_classes.earth_rune.description": "Erhalte eine Erde Rune",
+  "advancements.more_rpg_content.earth_spells.title": "Zerschmetternder Fels",
+  "advancements.more_rpg_content.earth_spells.description": "Schalte alle Erde Zauber frei",
+
+  "enchantment.elemental_wizards_rpg.elemental" : "Elementarbeherrschung",
+  "enchantment.elemental_wizards_rpg.elemental.desc" : "Erhöht alle Arten von Elementarzauberschaden, den du verursachst",
+  "enchantment.elemental_wizards_rpg.air_mastery" : "Luftbeherrschung",
+  "enchantment.elemental_wizards_rpg.air_mastery.desc" : "Erhöht den von dir verursachten Luftzauberschaden",
+  "enchantment.elemental_wizards_rpg.earth_mastery" : "Erdbeherrschung",
+  "enchantment.elemental_wizards_rpg.earth_mastery.desc" : "Erhöht den von dir verursachten Erdzauberschaden",
+  "enchantment.elemental_wizards_rpg.water_mastery" : "Wasserbeherrschung",
+  "enchantment.elemental_wizards_rpg.water_mastery.desc" : "Erhöht den von dir verursachten Wasserzauberschaden."
+}

@@ -1,0 +1,54 @@
+{
+	"schemaVersion": 1,
+	"id": "elemental_wizards_rpg",
+	"version": "${version}",
+	"name": "Elemental Wizards (RPG Class)",
+	"description": "Master the elements to overcome your foes! Spell Engine Add-On",
+	"authors": [
+		"Fichte"
+	],
+	"contact": {
+		"sources": "https://github.com/ProfessorFichte"
+	},
+	"license": "MIT",
+	"icon": "assets/elemental_wizards_rpg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client":[
+			"net.elemental_wizards_rpg.client.ElementalClient"
+		],
+		"main": [
+			"net.elemental_wizards_rpg.ElementalMod"
+		],
+		"fabric-datagen": [
+			"net.elemental_wizards_rpg.ElementalWizardsRPGClassDataGenerator"
+		],
+		"modmenu": [
+			"net.spell_engine.client.compatibility.ModMenuCompatibility"
+		]
+	},
+	"mixins": [
+		"elemental_wizards_rpg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"azurelibarmor": "*",
+		"spell_engine": ">=0.14.0",
+		"spell_power": ">=0.10.0",
+		"more_rpg_classes": ">=1.1.4",
+		"runes": "*"
+	},
+	"suggests": {
+		"better_combat": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/AShKd5XrTu"
+			}
+		}
+	}
+}

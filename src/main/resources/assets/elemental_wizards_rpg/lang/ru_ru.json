@@ -1,0 +1,44 @@
+{
+  "itemGroup.elemental_wizards_rpg.general": "Elemental Wizards",
+
+  "item.elemental_wizards_rpg.aqua_spell_book": "Тайны Океана",
+
+  "item.elemental_wizards_rpg.wand_kelp": "Жезл из Водорослей",
+  "item.elemental_wizards_rpg.wand_aqua": "Водяной Жезл",
+  "item.elemental_wizards_rpg.wand_netherite_aqua": "Незеритовый Водяной Жезл",
+  "item.elemental_wizards_rpg.staff_aqua": "Водяной Посох",
+  "item.elemental_wizards_rpg.staff_netherite_aqua": "Незеритовый Водяной Посох",
+
+  "item.elemental_wizards_rpg.kelp_head": "Шляпа Ученика Воды",
+  "item.elemental_wizards_rpg.kelp_chest": "Халат Ученика Воды",
+  "item.elemental_wizards_rpg.kelp_legs": "Поножи Ученика Воды",
+  "item.elemental_wizards_rpg.kelp_feet": "Ботинки Ученика Воды",
+
+  "item.elemental_wizards_rpg.river_head": "Капюшон Реки",
+  "item.elemental_wizards_rpg.river_chest": "Халат Реки",
+  "item.elemental_wizards_rpg.river_legs": "Поножи Реки",
+  "item.elemental_wizards_rpg.river_feet": "Ботинки Реки",
+
+  "effect.elemental_wizards_rpg.soaked": "Пропитанный",
+  "effect.elemental_wizards_rpg.soaked.description": "Обливет цель водой. Она становится более уязвимой к заклинаниям мороза, молнии и воды.",
+  "effect.elemental_wizards_rpg.cleansing_water": "Очищающая Вода",
+  "effect.elemental_wizards_rpg.cleansing_water.description": "Святая вода, тушенит пожар и восстановливает здоровье. Если у цели полное здоровье, то при применении эффекта устраняются негативные эффекты.",
+  "effect.elemental_wizards_rpg.bubble_foam": "Пузырьковый Щит",
+  "effect.elemental_wizards_rpg.bubble_foam.description": "При контакте защищает игрока и отталкивает мишени в сторону.",
+
+  "spell.elemental_wizards_rpg.aqua_splash.name": "Всплеск",
+  "spell.elemental_wizards_rpg.aqua_splash.description": "Исцеляет тебя на {heal} или брызгает на цель, нанося {damage} урон от заклинания воды.",
+  "spell.elemental_wizards_rpg.aqua_water_whip.name": "Водяной Хлыст",
+  "spell.elemental_wizards_rpg.aqua_water_whip.description": "Быстрый водяной хлыст, наносящий {damage} урона водой и пропитывая цель.",
+  "spell.elemental_wizards_rpg.aqua_bubble_beam.name": "Пузырьковый Луч",
+  "spell.elemental_wizards_rpg.aqua_bubble_beam.description": "Порождает маленькие пузырьки, нанося {damage} урона водой и защищает союзников.",
+  "spell.elemental_wizards_rpg.aqua_springwater.name": "Родниковая Вода",
+  "spell.elemental_wizards_rpg.aqua_springwater.description": "Вызывает источники воды, исцеляющие и очищающие союзников на {heal}, и наносит {damage} урона водой.",
+  "spell.elemental_wizards_rpg.aqua_hydro_beam.name": "Гидро-Луч",
+  "spell.elemental_wizards_rpg.aqua_hydro_beam.description": "Луч высокого давления, наносит {damage} урона водой каждую секунду и пропитывая цели.",
+
+  "advancements.rpg_classes.water_rune.title": "Путь Воды",
+  "advancements.rpg_classes.water_rune.description": "Получите Руну Воды",
+  "advancements.more_rpg_content.water_spells.title": "Успокаивающая Вода",
+  "advancements.more_rpg_content.water_spells.description": "Получите все заклинания Водной Стихии"
+}

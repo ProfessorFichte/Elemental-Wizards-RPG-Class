@@ -1,0 +1,160 @@
+{
+  "school": "WATER",
+  "range": 6,
+  "learn": {
+    "tier": 2
+  },
+  "cast": {
+    "duration": 1.5,
+    "animation": "spell_engine:one_handed_projectile_charge",
+    "sound": {
+      "id": "block.bubble_column.whirlpool_ambient",
+      "randomness": 0
+    },
+    "particles": [
+      {
+        "particle_id": "more_rpg_classes:big_splash",
+        "shape": "PIPE",
+        "origin": "FEET",
+        "count": 5.0,
+        "min_speed": 0.01,
+        "max_speed": 0.05
+      },
+      {
+        "particle_id": "more_rpg_classes:splash",
+        "shape": "CIRCLE",
+        "origin": "FEET",
+        "count": 10.0,
+        "min_speed": 0.05,
+        "max_speed": 0.1
+      }
+    ]
+  },
+  "release": {
+    "custom_impact": false,
+    "target": {
+      "type": "AREA",
+      "area": {
+        "include_caster": true,
+        "distance_dropoff": "SQUARED",
+        "angle_degrees": 360.0
+      }
+    },
+    "animation": "spell_engine:one_handed_projectile_release",
+    "sound": {
+      "id": "ambient.underwater.exit"
+    }
+  },
+  "impact": [
+    {
+      "action": {
+        "type": "HEAL",
+        "heal": {
+          "spell_power_coefficient": 0.5
+        }
+      },
+      "particles": [
+        {
+          "particle_id": "more_rpg_classes:water_heal",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 5,
+          "min_speed": 0.01,
+          "max_speed": 0.05
+        },
+        {
+          "particle_id": "more_rpg_classes:water_heal",
+          "shape": "SPHERE",
+          "origin": "CENTER",
+          "count": 5,
+          "min_speed": 0.05,
+          "max_speed": 0.1
+        },
+        {
+          "particle_id": "more_rpg_classes:water_circle",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 1.0,
+          "min_speed": 0.2,
+          "max_speed": 1.0
+        }
+      ],
+      "sound": {
+        "id": "spell_engine:generic_healing_impact_2",
+        "volume": 1.2
+      }
+    },
+    {
+      "action": {
+        "type": "DAMAGE",
+        "damage": {
+          "knockback": 0.5,
+          "spell_power_coefficient": 1
+        }
+      },
+      "particles": [
+        {
+          "particle_id": "more_rpg_classes:big_splash",
+          "shape": "PILLAR",
+          "origin": "FEET",
+          "count": 40,
+          "min_speed": 0.05,
+          "max_speed": 0.2
+        },
+        {
+          "particle_id": "more_rpg_classes:splash",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 30.0,
+          "min_speed": 0.05,
+          "max_speed": 0.2
+        },
+        {
+          "particle_id": "more_rpg_classes:water_circle",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 1.0,
+          "min_speed": 0.2,
+          "max_speed": 1.0
+        }
+      ],
+      "sound": {
+        "id": "more_rpg_classes:water_magic_impact1",
+        "volume": 0.4
+      }
+    },
+    {
+      "action": {
+        "type": "STATUS_EFFECT",
+        "status_effect": {
+          "effect_id": "elemental_wizards_rpg:soaked",
+          "duration": 6,
+          "apply_mode": "SET",
+          "apply_limit": {
+            "health_base": 50
+          },
+          "show_particles": false
+        }
+      }
+    },
+    {
+      "action": {
+        "type": "STATUS_EFFECT",
+        "status_effect": {
+          "effect_id": "elemental_wizards_rpg:cleansing_water",
+          "amplifier": 0,
+          "duration": 4,
+          "apply_mode": "SET",
+          "amplifier_power_multiplier": 0.2,
+          "show_particles": false
+        }
+      }
+    }
+  ],
+  "cost": {
+    "item_id": "more_rpg_classes:aqua_stone",
+    "cooldown_duration": 15,
+    "exhaust" : 0.4,
+    "cooldown_haste_affected": true
+  }
+}

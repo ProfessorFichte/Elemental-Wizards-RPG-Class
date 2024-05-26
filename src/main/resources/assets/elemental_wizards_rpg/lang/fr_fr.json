@@ -1,0 +1,44 @@
+{
+  "itemGroup.elemental_wizards_rpg.general": "Mages Élémentaires",
+
+  "item.elemental_wizards_rpg.aqua_spell_book": "Secrets de l'Océan",
+
+  "item.elemental_wizards_rpg.wand_kelp": "Baguette de Varech",
+  "item.elemental_wizards_rpg.wand_aqua": "Baguette Aquatique",
+  "item.elemental_wizards_rpg.wand_netherite_aqua": "Baguette Aquatique en Netherite",
+  "item.elemental_wizards_rpg.staff_aqua": "Bâton Aquatique",
+  "item.elemental_wizards_rpg.staff_netherite_aqua": "Bâton Aquatique en Netherite",
+
+  "item.elemental_wizards_rpg.kelp_head": "Chapeau d'Apprenti Aquatique",
+  "item.elemental_wizards_rpg.kelp_chest": "Tunique d'Apprenti Aquatique",
+  "item.elemental_wizards_rpg.kelp_legs": "Pantalon d'Apprenti Aquatique",
+  "item.elemental_wizards_rpg.kelp_feet": "Bottes d'Apprenti Aquatique",
+
+  "item.elemental_wizards_rpg.river_head": "Capuche de Rivière",
+  "item.elemental_wizards_rpg.river_chest": "Haut de Robe de Rivière",
+  "item.elemental_wizards_rpg.river_legs": "Bas de Robe de Rivière",
+  "item.elemental_wizards_rpg.river_feet": "Bottes de Rivière",
+
+  "effect.elemental_wizards_rpg.soaked": "Trempé",
+  "effect.elemental_wizards_rpg.soaked.description": "Trempant la cible avec de l'eau éteignant le feu, plus vulnérable au gel, aux éclairs et aux sorts d'eau.",
+  "effect.elemental_wizards_rpg.cleansing_water": "Eau Purificatrice",
+  "effect.elemental_wizards_rpg.cleansing_water.description": "Eau bénite, éteignant le feu et régénérant la santé. Si la cible est en pleine santé, nettoie les effets négatifs en appliquant l'effet.",
+  "effect.elemental_wizards_rpg.bubble_foam": "Bouclier de Bulles",
+  "effect.elemental_wizards_rpg.bubble_foam.description": "Protège le joueur et repousse les cibles au contact.",
+
+  "spell.elemental_wizards_rpg.aqua_splash.name": "Éclaboussure",
+  "spell.elemental_wizards_rpg.aqua_splash.description": "Vous soigne de {heal} ou éclabousse la cible infligeant {damage} de dégâts de sort d'eau.",
+  "spell.elemental_wizards_rpg.aqua_water_whip.name": "Fouet d'Eau",
+  "spell.elemental_wizards_rpg.aqua_water_whip.description": "Fouet d'eau rapide, infligeant {damage} de dégâts de sort d'eau, trempant la cible.",
+  "spell.elemental_wizards_rpg.aqua_bubble_beam.name": "Rayon de Bulles",
+  "spell.elemental_wizards_rpg.aqua_bubble_beam.description": "Créant de petites bulles, infligeant {damage} de dégâts de sort d'eau aux cibles, protégeant les alliés.",
+  "spell.elemental_wizards_rpg.aqua_springwater.name": "Eau de Source",
+  "spell.elemental_wizards_rpg.aqua_springwater.description": "Invoquant des sources d'eau, guérissant et purifiant les alliés de {heal}, et infligeant {damage} de dégâts de sort d'eau aux cibles.",
+  "spell.elemental_wizards_rpg.aqua_hydro_beam.name": "Rayon Hydro",
+  "spell.elemental_wizards_rpg.aqua_hydro_beam.description": "Canalisation d'un faisceau d'hydro-pression élevée, infligeant {damage} de dégâts d'eau chaque seconde et trempant les cibles.",
+
+  "advancements.rpg_classes.water_rune.title": "Voie de l'Eau",
+  "advancements.rpg_classes.water_rune.description": "Obtenir une Rune d'Eau",
+  "advancements.more_rpg_content.water_spells.title": "Eaux Apaisantes",
+  "advancements.more_rpg_content.water_spells.description": "Obtenir tous les Sorts Élémentaires d'Eau"
+}

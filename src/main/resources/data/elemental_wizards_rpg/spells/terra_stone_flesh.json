@@ -1,0 +1,50 @@
+{
+  "school": "EARTH",
+  "range": 0,
+  "learn": {
+    "tier": 2
+  },
+  "cast": {
+    "duration": 0
+  },
+  "release": {
+    "target": {
+      "type": "SELF"
+    },
+    "animation": "more_rpg_classes:two_handed_ground_release",
+    "sound": {
+      "id": "more_rpg_classes:earth_magic_cast1",
+      "volume": 0.5
+    },
+    "particles": [
+      {
+        "particle_id": "more_rpg_classes:stone_particle",
+        "shape": "CIRCLE",
+        "origin": "FEET",
+        "count": 3.0,
+        "min_speed": 0.01,
+        "max_speed": 0.05
+      }
+    ]
+  },
+  "impact": [
+    {
+      "action": {
+        "type": "STATUS_EFFECT",
+        "status_effect": {
+          "effect_id": "elemental_wizards_rpg:stone_flesh",
+          "duration": 10,
+          "apply_mode": "SET",
+          "amplifier_power_multiplier": 0.2,
+          "amplifier": 0,
+          "show_particles": false
+        }
+      }
+    }
+  ],
+  "cost": {
+    "exhaust": 0.3,
+    "item_id": "more_rpg_classes:terra_stone",
+    "cooldown_duration": 20
+  }
+}

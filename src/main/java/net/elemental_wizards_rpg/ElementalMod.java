@@ -1,0 +1,88 @@
+package net.elemental_wizards_rpg;
+
+import net.elemental_wizards_rpg.config.EffectsConfig;
+import net.elemental_wizards_rpg.custom.CustomSpells;
+import net.elemental_wizards_rpg.effect.Effects;
+import net.elemental_wizards_rpg.entity.DripstoneBigEntity;
+import net.elemental_wizards_rpg.entity.DripstoneSmallEntity;
+import net.elemental_wizards_rpg.item.ElementalGroup;
+import net.elemental_wizards_rpg.item.ElementalItems;
+import net.elemental_wizards_rpg.item.armor.Armors;
+import net.elemental_wizards_rpg.item.config.Default;
+import net.elemental_wizards_rpg.item.weapons.WeaponsRegister;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
+import net.minecraft.entity.EntityDimensions;
+import net.minecraft.entity.SpawnGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+import net.spell_engine.api.item.ItemConfig;
+import net.tinyconfig.ConfigManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ElementalMod implements ModInitializer {
+	public static final String MOD_ID = "elemental_wizards_rpg";
+    public static final Logger LOGGER = LoggerFactory.getLogger("elemental_wizards_rpg");
+
+	public static ConfigManager<ItemConfig> itemConfig = new ConfigManager<ItemConfig>
+			("items_v2", Default.itemConfig)
+			.builder()
+			.setDirectory(MOD_ID)
+			.sanitize(true)
+			.build();
+	public static ConfigManager<EffectsConfig> effectsConfig = new ConfigManager<EffectsConfig>
+			("effects_v1", new EffectsConfig())
+			.builder()
+			.setDirectory(MOD_ID)
+			.sanitize(true)
+			.build();
+
+	private void registerItemGroup() {
+		ElementalGroup.ELEMENTAL_WIZARD = FabricItemGroup.builder()
+				.icon(() -> new ItemStack(Armors.elementalArmor.head))
+				.displayName(Text.translatable("itemGroup." + MOD_ID + ".general"))
+				.build();
+		Registry.register(Registries.ITEM_GROUP, ElementalGroup.ELEMENTAL_WIZARD_KEY, ElementalGroup.ELEMENTAL_WIZARD);
+	}
+
+	@Override
+	public void onInitialize() {
+		itemConfig.refresh();
+		Effects.register();
+		effectsConfig.refresh();
+		ElementalItems.registerModItems();
+		ElementalGroup.registerItemGroups();
+		CustomSpells.register();
+		WeaponsRegister.register(itemConfig.value.weapons);
+		Armors.register(itemConfig.value.armor_sets);
+		itemConfig.save();
+		registerItemGroup();
+	}
+	static {
+		DripstoneBigEntity.ENTITY_TYPE = Registry.register(
+				Registries.ENTITY_TYPE,
+				new Identifier(MOD_ID, "wave"),
+				FabricEntityTypeBuilder.<DripstoneBigEntity>create(SpawnGroup.MISC, DripstoneBigEntity::new)
+						.dimensions(EntityDimensions.changing(6F, 0.5F)) // dimensions in Minecraft units of the render
+						.fireImmune()
+						.trackRangeBlocks(128)
+						.trackedUpdateRate(20)
+						.build()
+		);
+		DripstoneSmallEntity.ENTITY_TYPE = Registry.register(
+				Registries.ENTITY_TYPE,
+				new Identifier(MOD_ID, "wave2"),
+				FabricEntityTypeBuilder.<DripstoneSmallEntity>create(SpawnGroup.MISC, DripstoneSmallEntity::new)
+						.dimensions(EntityDimensions.changing(6F, 0.5F)) // dimensions in Minecraft units of the render
+						.fireImmune()
+						.trackRangeBlocks(128)
+						.trackedUpdateRate(20)
+						.build()
+		);
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:pointed_dripstone"
+    },
+    "B": {
+      "tag": "minecraft:wool"
+    },
+    "C": {
+      "item": "minecraft:dripstone_block"
+    }
+  },
+  "pattern": [
+    "  C",
+    " C ",
+    "BBA"
+  ],
+  "result": {
+    "item": "elemental_wizards_rpg:dripstone_head"
+  }
+}
