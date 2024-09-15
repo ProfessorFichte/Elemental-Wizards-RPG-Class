@@ -56,7 +56,7 @@ public class Effects {
         Synchronized.configure(STONE_FLESH,true);
         Synchronized.configure(TREMBLING,true);
 
-        int effect_id =200;
+        int effect_id =1200;
         Registry.register(Registries.STATUS_EFFECT, effect_id++, new Identifier(MOD_ID, "soaked").toString(), SOAKED);
         Registry.register(Registries.STATUS_EFFECT, effect_id++, new Identifier(MOD_ID, "cleansing_water").toString(), CLEANSING_WATER);
         Registry.register(Registries.STATUS_EFFECT, effect_id++, new Identifier(MOD_ID, "bubble_foam").toString(), BUBBLE_FOAM);

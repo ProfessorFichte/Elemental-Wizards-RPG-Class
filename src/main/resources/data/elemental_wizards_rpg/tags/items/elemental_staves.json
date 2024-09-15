@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "elemental_wizards_rpg:staff_aqua",
+    "elemental_wizards_rpg:staff_terra",
+    "elemental_wizards_rpg:staff_netherite_aqua",
+    "elemental_wizards_rpg:staff_netherite_terra",
+    {
+      "id": "elemental_wizards_rpg:staff_crystal_aqua",
+      "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:staff_ruby_terra",
+      "required": false
+    }
+  ]
+}

@@ -10,4 +10,6 @@ public class DripstoneSmallEntity extends SpellCloud {
     public DripstoneSmallEntity(EntityType<? extends SpellCloud> entityType, World world) {
         super(entityType, world);
     }
+
+
 }

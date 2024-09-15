@@ -53,7 +53,6 @@ public class ElementalMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		itemConfig.refresh();
-		Effects.register();
 		effectsConfig.refresh();
 		ElementalItems.registerModItems();
 		ElementalGroup.registerItemGroups();
@@ -62,6 +61,7 @@ public class ElementalMod implements ModInitializer {
 		Armors.register(itemConfig.value.armor_sets);
 		itemConfig.save();
 		registerItemGroup();
+		Effects.register();
 	}
 	static {
 		DripstoneBigEntity.ENTITY_TYPE = Registry.register(

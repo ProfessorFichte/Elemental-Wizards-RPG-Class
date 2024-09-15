@@ -1,3 +1,23 @@
+1.1.5
+- forgot to gave Terra Staves Better Combat tags for stave weapon attributes
+- registered the effects before refreshing the config, resulting in the effects not adapting the config
+
+1.1.4
+- Added Compat to BetterEnd & BetterNether, you can craft a Crystal Aqua Staff or a Ruby Earth Staff
+
+1.1.3
+- forgot to add Earth Weapons to the RPG-Series Tags
+- added tags for enchantments due to Spell Power 0.11 Update
+- Spell Power now works on Elemental Wands & Staves
+- Elemental mastery is for Armor items now!
+
+1.1.2
+- Hotfix because of CleansingWater causing crashes
+- changed particles for Soaked and Cleansing Water because
+
+1.1.1
+- fixed a bug with effect ids causing the spells to give Forcemaster effects when both mods where installed
+
 1.1.0
 - first release of Earth Magic
 - added new Water Splash Explosion Particle via the lib

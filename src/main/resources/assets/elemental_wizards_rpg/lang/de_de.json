@@ -8,9 +8,10 @@
 
   "item.elemental_wizards_rpg.wand_kelp": "Seetang Rute",
   "item.elemental_wizards_rpg.wand_aqua": "Aqua Rute",
-  "item.elemental_wizards_rpg.wand_netherite_aqua": "Netherite Aqua Rute",
+  "item.elemental_wizards_rpg.wand_netherite_aqua": "Netherit Aqua Rute",
   "item.elemental_wizards_rpg.staff_aqua": "Aqua Stab",
-  "item.elemental_wizards_rpg.staff_netherite_aqua": "Netherite Aqua Stab",
+  "item.elemental_wizards_rpg.staff_netherite_aqua": "Netherit Aqua Stab",
+  "item.elemental_wizards_rpg.staff_crystal_aqua": "Kristall Aqua Stab",
 
   "item.elemental_wizards_rpg.elemental_head": "Elementar Lehrlings Hut",
   "item.elemental_wizards_rpg.elemental_chest": "Elementar Lehrlings Robe Oben",
@@ -31,6 +32,14 @@
   "item.elemental_wizards_rpg.river_chest": "Fluss Robe Oben",
   "item.elemental_wizards_rpg.river_legs": "Fluss Robe Unten",
   "item.elemental_wizards_rpg.river_feet": "Fluss Stiefel",
+
+  "item.elemental_wizards_rpg.wand_clay": "Lehm Rute",
+  "item.elemental_wizards_rpg.wand_terra": "Terra Rute",
+  "item.elemental_wizards_rpg.wand_netherite_terra": "Netherit Terra Rute",
+  "item.elemental_wizards_rpg.staff_terra": "Terra Stab",
+  "item.elemental_wizards_rpg.staff_netherite_terra": "Netherit Terra Stab",
+  "item.elemental_wizards_rpg.staff_ruby_terra": "Rubin Terra Stab",
+
 
   "effect.elemental_wizards_rpg.soaked": "Durchnässt",
   "effect.elemental_wizards_rpg.soaked.description": "  Das Ziel wird durchnässt, Feuer wird gelöscht und das Ziel wird anfälliger für Frost- und Blitzzauberschaden.",

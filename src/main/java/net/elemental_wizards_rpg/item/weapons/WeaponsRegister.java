@@ -67,7 +67,7 @@ public class WeaponsRegister {
             Weapon.CustomMaterial.matching(ToolMaterials.WOOD, () -> Ingredient.ofItems(Items.STICK)))
             .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.EARTH.id, 1));
     public static final Weapon.Entry terraWand = wand("wand_terra",
-            Weapon.CustomMaterial.matching(ToolMaterials.WOOD, () -> Ingredient.ofItems(Items.IRON_INGOT)))
+            Weapon.CustomMaterial.matching(ToolMaterials.IRON, () -> Ingredient.ofItems(Items.IRON_INGOT)))
             .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.EARTH.id, 2));
     public static final Weapon.Entry netheriteTerraWand = wand("wand_netherite_terra",
             Weapon.CustomMaterial.matching(ToolMaterials.NETHERITE, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)))
@@ -100,6 +100,14 @@ public class WeaponsRegister {
             .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.EARTH.id, 5))
             ;
 
+    public static final Weapon.Entry rubyTerraStaff = staff("betternether","staff_ruby_terra",
+            Weapon.CustomMaterial.matching(ToolMaterials.NETHERITE, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)))
+            .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.EARTH.id, 6))
+            ;
+    public static final Weapon.Entry crystalAquaStaff = staff("betterend","staff_crystal_aqua",
+            Weapon.CustomMaterial.matching(ToolMaterials.NETHERITE, ingredient("betterend:aeternium_ingot")))
+            .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.WATER.id, 6))
+            ;
 
     //Registration
     public static void register(Map<String,ItemConfig.Weapon> configs) {

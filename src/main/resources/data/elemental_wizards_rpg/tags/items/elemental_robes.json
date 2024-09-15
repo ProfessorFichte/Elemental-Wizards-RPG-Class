@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "elemental_wizards_rpg:elemental_head",
+    "elemental_wizards_rpg:elemental_chest",
+    "elemental_wizards_rpg:elemental_legs",
+    "elemental_wizards_rpg:elemental_feet",
+
+    "elemental_wizards_rpg:kelp_head",
+    "elemental_wizards_rpg:kelp_chest",
+    "elemental_wizards_rpg:kelp_legs",
+    "elemental_wizards_rpg:kelp_feet",
+
+    "elemental_wizards_rpg:dripstone_head",
+    "elemental_wizards_rpg:dripstone_chest",
+    "elemental_wizards_rpg:dripstone_legs",
+    "elemental_wizards_rpg:dripstone_feet"
+  ]
+}

@@ -11,4 +11,9 @@ public class DripstoneBigEntity extends SpellCloud {
     public DripstoneBigEntity(EntityType<? extends SpellCloud> entityType, World world) {
         super(entityType, world);
     }
+
+    @Override
+    public boolean canBeHitByProjectile() {
+        return this.isAlive();
+    }
 }

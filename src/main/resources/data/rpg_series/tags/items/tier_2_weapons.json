@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "elemental_wizards_rpg:wand_aqua",
-    "elemental_wizards_rpg:staff_aqua"
+    "elemental_wizards_rpg:staff_aqua",
+    "elemental_wizards_rpg:wand_terra",
+    "elemental_wizards_rpg:staff_terra"
   ]
 }

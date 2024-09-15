@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "elemental_wizards_rpg:wand_kelp",
+    "elemental_wizards_rpg:wand_clay",
+    "elemental_wizards_rpg:wand_aqua",
+    "elemental_wizards_rpg:wand_terra",
+    "elemental_wizards_rpg:wand_netherite_aqua",
+    "elemental_wizards_rpg:wand_netherite_terra"
+  ]
+}
