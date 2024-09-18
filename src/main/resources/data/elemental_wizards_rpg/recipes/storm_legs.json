@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:gold_ingot"
+    },
+    "B": {
+      "tag": "minecraft:wool"
+    },
+    "C": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "C C",
+    "B B"
+  ],
+  "result": {
+    "item": "elemental_wizards_rpg:storm_legs"
+  }
+}

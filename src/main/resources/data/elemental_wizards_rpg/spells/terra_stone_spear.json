@@ -7,7 +7,7 @@
   },
   "cast": {
     "duration": 1.2,
-    "animation": "more_rpg_classes:two_handed_ground_channeling",
+    "animation": "more_rpg_classes:two_handed_ground_release",
     "sound": {
       "id": "more_rpg_classes:earth_magic_cast1",
       "volume": 0.5

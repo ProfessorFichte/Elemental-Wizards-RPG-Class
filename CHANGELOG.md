@@ -1,3 +1,11 @@
+1.2.0
+Official Release of the Mod!
+###GENERAL CHANGES
+- Storm Wizard Release!
+
+###BALANCING
+
+
 1.1.5
 - forgot to gave Terra Staves Better Combat tags for stave weapon attributes
 - registered the effects before refreshing the config, resulting in the effects not adapting the config

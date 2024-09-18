@@ -5,6 +5,7 @@ import net.elemental_wizards_rpg.custom.CustomSpells;
 import net.elemental_wizards_rpg.effect.Effects;
 import net.elemental_wizards_rpg.entity.DripstoneBigEntity;
 import net.elemental_wizards_rpg.entity.DripstoneSmallEntity;
+import net.elemental_wizards_rpg.entity.TornadoEntity;
 import net.elemental_wizards_rpg.item.ElementalGroup;
 import net.elemental_wizards_rpg.item.ElementalItems;
 import net.elemental_wizards_rpg.item.armor.Armors;
@@ -66,7 +67,7 @@ public class ElementalMod implements ModInitializer {
 	static {
 		DripstoneBigEntity.ENTITY_TYPE = Registry.register(
 				Registries.ENTITY_TYPE,
-				new Identifier(MOD_ID, "wave"),
+				new Identifier(MOD_ID, "dripstone_big"),
 				FabricEntityTypeBuilder.<DripstoneBigEntity>create(SpawnGroup.MISC, DripstoneBigEntity::new)
 						.dimensions(EntityDimensions.changing(6F, 0.5F)) // dimensions in Minecraft units of the render
 						.fireImmune()
@@ -76,9 +77,19 @@ public class ElementalMod implements ModInitializer {
 		);
 		DripstoneSmallEntity.ENTITY_TYPE = Registry.register(
 				Registries.ENTITY_TYPE,
-				new Identifier(MOD_ID, "wave2"),
+				new Identifier(MOD_ID, "dripstone_small"),
 				FabricEntityTypeBuilder.<DripstoneSmallEntity>create(SpawnGroup.MISC, DripstoneSmallEntity::new)
 						.dimensions(EntityDimensions.changing(6F, 0.5F)) // dimensions in Minecraft units of the render
+						.fireImmune()
+						.trackRangeBlocks(128)
+						.trackedUpdateRate(20)
+						.build()
+		);
+		TornadoEntity.ENTITY_TYPE = Registry.register(
+				Registries.ENTITY_TYPE,
+				new Identifier(MOD_ID, "tornado"),
+				FabricEntityTypeBuilder.<TornadoEntity>create(SpawnGroup.MISC, TornadoEntity::new)
+						.dimensions(EntityDimensions.changing(6F, 0.5F))
 						.fireImmune()
 						.trackRangeBlocks(128)
 						.trackedUpdateRate(20)

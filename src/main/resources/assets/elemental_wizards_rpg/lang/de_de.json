@@ -24,14 +24,14 @@
   "item.elemental_wizards_rpg.kelp_feet": "Aqua Stiefel",
 
   "item.elemental_wizards_rpg.dripstone_head": "Terra Hut",
-  "item.elemental_wizards_rpg.dripstone_chest": "Terra obe Oben",
+  "item.elemental_wizards_rpg.dripstone_chest": "Terra oben Oben",
   "item.elemental_wizards_rpg.dripstone_legs": "Terra Robe Unten",
   "item.elemental_wizards_rpg.dripstone_feet": "Terra Stiefel",
 
-  "item.elemental_wizards_rpg.river_head": "Fluss Kaputze",
-  "item.elemental_wizards_rpg.river_chest": "Fluss Robe Oben",
-  "item.elemental_wizards_rpg.river_legs": "Fluss Robe Unten",
-  "item.elemental_wizards_rpg.river_feet": "Fluss Stiefel",
+  "item.elemental_wizards_rpg.wind_head": "Sturm Hut",
+  "item.elemental_wizards_rpg.wind_chest": "Sturm Robe Oben",
+  "item.elemental_wizards_rpg.wind_legs": "Sturm Robe Unten",
+  "item.elemental_wizards_rpg.wind_feet": "Sturm Stiefel",
 
   "item.elemental_wizards_rpg.wand_clay": "Lehm Rute",
   "item.elemental_wizards_rpg.wand_terra": "Terra Rute",
@@ -40,6 +40,12 @@
   "item.elemental_wizards_rpg.staff_netherite_terra": "Netherit Terra Stab",
   "item.elemental_wizards_rpg.staff_ruby_terra": "Rubin Terra Stab",
 
+  "item.elemental_wizards_rpg.wand_feather": "Feder Rute",
+  "item.elemental_wizards_rpg.wand_storm": "Sturm Rute",
+  "item.elemental_wizards_rpg.wand_netherite_storm": "Netherit Sturm Rute",
+  "item.elemental_wizards_rpg.staff_storm": "Sturm Stab",
+  "item.elemental_wizards_rpg.staff_netherite_storm": "Netherit Sturm Stab",
+  "item.elemental_wizards_rpg.staff_aeternium_storm": "Aeternium Sturm Stab",
 
   "effect.elemental_wizards_rpg.soaked": "Durchnässt",
   "effect.elemental_wizards_rpg.soaked.description": "  Das Ziel wird durchnässt, Feuer wird gelöscht und das Ziel wird anfälliger für Frost- und Blitzzauberschaden.",
@@ -51,6 +57,13 @@
   "effect.elemental_wizards_rpg.stone_flesh.description": "Gibt dem Benutzer Rüstung und Rüstungshärte, falls du volle Herzen hast, wird der nächste Angriff um 50% reduziert.",
   "effect.elemental_wizards_rpg.trembling": "Erzittert",
   "effect.elemental_wizards_rpg.trembling.description": "Verlangsamt das Ziel, wenn das Effektlevel 4 beträgt, wird das Ziel betäubt.",
+  "effect.elemental_wizards_rpg.aeroblast": "Luftstoß",
+  "effect.elemental_wizards_rpg.aeroblast.description": "Wirft das Ziel bei Anwendung hoch.",
+  "effect.elemental_wizards_rpg.updraft": "Aufwind",
+  "effect.elemental_wizards_rpg.updraft.description": "Macht das Ziel anfälliger für Luftzauberschaden, wenn es sich in der Luft befindet, und hält das Ziel in der Luft.",
+  "effect.elemental_wizards_rpg.tornado": "Tornado",
+  "effect.elemental_wizards_rpg.tornado.description": "Macht das Ziel anfälliger für Feuerzauberschaden, saugt es in den nächsten Tornado und schleudert das Ziel hoch.",
+
 
   "spell.elemental_wizards_rpg.aqua_splash.name": "Sprudelwasser",
   "spell.elemental_wizards_rpg.aqua_splash.description": "Heilt dich um {heal} oder greift das Ziel an und verursacht {damage} Wasserzauberschaden.",
@@ -74,6 +87,17 @@
   "spell.elemental_wizards_rpg.terra_earthquake.name": "Erdbeben",
   "spell.elemental_wizards_rpg.terra_earthquake.description": "Verursacht {damage} Erdzauberschaden, schleudert Ziele herum und fügt einen Zittereffekt hinzu.",
 
+  "spell.elemental_wizards_rpg.storm_gust.name": "Böe",
+  "spell.elemental_wizards_rpg.storm_gust.description": "Kleine Böe, verursacht {damage} Luftzauberschaden.",
+  "spell.elemental_wizards_rpg.storm_air_cutter.name": "Luftschnitt",
+  "spell.elemental_wizards_rpg.storm_air_cutter.description": "Verursacht in einem kleinen Bereich konstanten {damage} Luftzauberschaden.",
+  "spell.elemental_wizards_rpg.storm_aeroblast.name": "Luftstoß",
+  "spell.elemental_wizards_rpg.storm_aeroblast.description": "Luftstoß, der {damage} Luftzauberschaden verursacht und das Ziel hochschleudert.",
+  "spell.elemental_wizards_rpg.storm_updraft.name": "Aufwind",
+  "spell.elemental_wizards_rpg.storm_updraft.description": "Fügt dem Ziel ständig {damage} Luftzauberschaden zu und fügt mehr Schaden zu, wenn das Ziel in der Luft ist.",
+  "spell.elemental_wizards_rpg.storm_tornado.name": "Tornado",
+  "spell.elemental_wizards_rpg.storm_tornado.description": "Beschwört einen Tornado, verursacht {damage} Luftzauberschaden, schleudert Feinde hoch und saugt sie in den Tornado ein.",
+
   "advancements.rpg_classes.water_rune.title": "Weg des Wassers",
   "advancements.rpg_classes.water_rune.description": "Erhalte eine Wasser Rune",
   "advancements.more_rpg_content.water_spells.title": "Beruhigendes Wasser",
@@ -84,12 +108,8 @@
   "advancements.more_rpg_content.earth_spells.title": "Zerschmetternder Fels",
   "advancements.more_rpg_content.earth_spells.description": "Schalte alle Erde Zauber frei",
 
-  "enchantment.elemental_wizards_rpg.elemental" : "Elementarbeherrschung",
-  "enchantment.elemental_wizards_rpg.elemental.desc" : "Erhöht alle Arten von Elementarzauberschaden, den du verursachst",
-  "enchantment.elemental_wizards_rpg.air_mastery" : "Luftbeherrschung",
-  "enchantment.elemental_wizards_rpg.air_mastery.desc" : "Erhöht den von dir verursachten Luftzauberschaden",
-  "enchantment.elemental_wizards_rpg.earth_mastery" : "Erdbeherrschung",
-  "enchantment.elemental_wizards_rpg.earth_mastery.desc" : "Erhöht den von dir verursachten Erdzauberschaden",
-  "enchantment.elemental_wizards_rpg.water_mastery" : "Wasserbeherrschung",
-  "enchantment.elemental_wizards_rpg.water_mastery.desc" : "Erhöht den von dir verursachten Wasserzauberschaden."
+  "advancements.rpg_classes.air_rune.title": "Weg der Luft",
+  "advancements.rpg_classes.air_rune.description": "Erhalte eine Luft Rune",
+  "advancements.more_rpg_content.air_spells.title": "Auge des Sturms",
+  "advancements.more_rpg_content.air_spells.description": "Schalte alle Luft Zauber frei"
 }

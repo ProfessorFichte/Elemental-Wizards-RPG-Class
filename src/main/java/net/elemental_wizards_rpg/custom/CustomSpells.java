@@ -47,6 +47,7 @@ public class CustomSpells {
             return false;
         });
 
+
         ///EARTH_SPELLS
         //EARTHQUAKE
         CustomSpellHandler.register(new Identifier(MOD_ID, "terra_earthquake"), (data) -> {

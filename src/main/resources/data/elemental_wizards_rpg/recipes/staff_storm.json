@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:feather"
+    },
+    "B": {
+      "item": "minecraft:gold_ingot"
+    },
+    "C": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    " CA",
+    " BC",
+    "A  "
+  ],
+  "result": {
+    "item": "elemental_wizards_rpg:staff_storm"
+  }
+}

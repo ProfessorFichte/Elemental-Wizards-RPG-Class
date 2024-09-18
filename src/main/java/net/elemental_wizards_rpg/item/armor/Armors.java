@@ -38,6 +38,7 @@ public class Armors {
     public static final float t2RobePower = 0.25F;
     private static final float t2Haste = 0.03F;
     private static final float t2CritChance = 0.02F;
+    private static final float t2CritDamage = 0.10F;
 
 
     public static final Armor.Set elementalArmor =
@@ -165,10 +166,10 @@ public class Armors {
                     .put(entries).armorSet()
                     .allowSpellPowerEnchanting(true);
 
-    public static final Armor.Set riverArmor =
+    public static final Armor.Set windArmor =
             create(
                     new Armor.CustomMaterial(
-                            "river",
+                            "wind",
                             20,
                             10,
                             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
@@ -177,29 +178,29 @@ public class Armors {
                     ItemConfig.ArmorSet.with(
                             new ItemConfig.ArmorSet.Piece(1)
                                     .addAll(List.of(
-                                            ItemConfig.Attribute.multiply(MoreSpellSchools.WATER.id, t2RobePower),
-                                            ItemConfig.Attribute.multiply(SpellPowerMechanics.HASTE.id, t2Haste)
+                                            ItemConfig.Attribute.multiply(MoreSpellSchools.AIR.id, t2RobePower),
+                                            ItemConfig.Attribute.multiply(SpellPowerMechanics.CRITICAL_DAMAGE.id, t2CritDamage)
                                     )),
                             new ItemConfig.ArmorSet.Piece(3)
                                     .addAll(List.of(
-                                            ItemConfig.Attribute.multiply(MoreSpellSchools.WATER.id, t2RobePower),
-                                            ItemConfig.Attribute.multiply(SpellPowerMechanics.HASTE.id, t2Haste)
+                                            ItemConfig.Attribute.multiply(MoreSpellSchools.AIR.id, t2RobePower),
+                                            ItemConfig.Attribute.multiply(SpellPowerMechanics.CRITICAL_DAMAGE.id, t2CritDamage)
                                     )),
                             new ItemConfig.ArmorSet.Piece(2)
                                     .addAll(List.of(
-                                            ItemConfig.Attribute.multiply(MoreSpellSchools.WATER.id, t2RobePower),
-                                            ItemConfig.Attribute.multiply(SpellPowerMechanics.HASTE.id, t2Haste)
+                                            ItemConfig.Attribute.multiply(MoreSpellSchools.AIR.id, t2RobePower),
+                                            ItemConfig.Attribute.multiply(SpellPowerMechanics.CRITICAL_DAMAGE.id, t2CritDamage)
                                     )),
                             new ItemConfig.ArmorSet.Piece(1)
                                     .addAll(List.of(
-                                            ItemConfig.Attribute.multiply(MoreSpellSchools.WATER.id, t2RobePower),
-                                            ItemConfig.Attribute.multiply(SpellPowerMechanics.HASTE.id, t2Haste)
+                                            ItemConfig.Attribute.multiply(MoreSpellSchools.AIR.id, t2RobePower),
+                                            ItemConfig.Attribute.multiply(SpellPowerMechanics.CRITICAL_DAMAGE.id, t2CritDamage)
                                     ))
                     ))   .bundle(material -> new Armor.Set<>(ElementalMod.MOD_ID,
-                            new RiverSetArmor(material, ArmorItem.Type.HELMET, new Item.Settings()),
-                            new RiverSetArmor(material, ArmorItem.Type.CHESTPLATE, new Item.Settings()),
-                            new RiverSetArmor(material, ArmorItem.Type.LEGGINGS, new Item.Settings()),
-                            new RiverSetArmor(material, ArmorItem.Type.BOOTS, new Item.Settings())
+                            new ElementalRobe(material, ArmorItem.Type.HELMET, new Item.Settings()),
+                            new ElementalRobe(material, ArmorItem.Type.CHESTPLATE, new Item.Settings()),
+                            new ElementalRobe(material, ArmorItem.Type.LEGGINGS, new Item.Settings()),
+                            new ElementalRobe(material, ArmorItem.Type.BOOTS, new Item.Settings())
                     ))
                     .put(entries).armorSet()
                     .allowSpellPowerEnchanting(true);

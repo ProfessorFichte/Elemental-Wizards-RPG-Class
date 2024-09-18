@@ -36,6 +36,8 @@ public class ElementalItems {
     public static void registerModItems(){
         SpellBooks.createAndRegister(new Identifier(ElementalMod.MOD_ID,"aqua"), ElementalGroup.ELEMENTAL_WIZARD_KEY);
         SpellBooks.createAndRegister(new Identifier(ElementalMod.MOD_ID,"terra"), ElementalGroup.ELEMENTAL_WIZARD_KEY);
+        SpellBooks.createAndRegister(new Identifier(ElementalMod.MOD_ID,"storm"), ElementalGroup.ELEMENTAL_WIZARD_KEY);
+
 
         Registry.register(Registries.ITEM,new Identifier(ElementalMod.MOD_ID,"elemental_essence"),ELEMENTAL_ESSENCE);
     }

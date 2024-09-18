@@ -1,7 +1,6 @@
 package net.elemental_wizards_rpg.client.entity;
 
 import net.elemental_wizards_rpg.ElementalMod;
-import net.elemental_wizards_rpg.entity.DripstoneBigEntity;
 import net.elemental_wizards_rpg.entity.DripstoneSmallEntity;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumerProvider;

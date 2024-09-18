@@ -79,14 +79,5 @@
   "advancements.rpg_classes.earth_rune.title": "Chemin de la Terre",
   "advancements.rpg_classes.earth_rune.description": "Obtenir une Rune de Terre",
   "advancements.more_rpg_content.earth_spells.title": "Roches Fracassantes",
-  "advancements.more_rpg_content.earth_spells.description": "Obtenir tous les sorts Élémentaires de Terre",
-
-  "enchantment.elemental_wizards_rpg.elemental" : "Maîtrise Élémentaire",
-  "enchantment.elemental_wizards_rpg.elemental.desc" : "Augmente tous les types de dégâts de sorts élémentaires que vous infligez",
-  "enchantment.elemental_wizards_rpg.air_mastery" : "Maîtrise de l'Air",
-  "enchantment.elemental_wizards_rpg.air_mastery.desc" : "Augmente les dégâts de sorts d'air que vous infligez",
-  "enchantment.elemental_wizards_rpg.earth_mastery" : "Maîtrise de la Terre",
-  "enchantment.elemental_wizards_rpg.earth_mastery.desc" : "Augmente les dégâts de sorts de terre que vous infligez",
-  "enchantment.elemental_wizards_rpg.water_mastery" : "Maîtrise de l'Eau",
-  "enchantment.elemental_wizards_rpg.water_mastery.desc" : "Augmente les dégâts de sorts d'eau que vous infligez"
+  "advancements.more_rpg_content.earth_spells.description": "Obtenir tous les sorts Élémentaires de Terre"
 }
