@@ -1,10 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "A": {
+    "B": {
       "item": "minecraft:feather"
     },
-    "B": {
+    "A": {
       "item": "minecraft:gold_ingot"
     },
     "C": {

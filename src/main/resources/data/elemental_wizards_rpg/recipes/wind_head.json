@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "item": "minecraft:feather"
+      "item": "minecraft:gold_ingot"
     },
     "B": {
       "tag": "minecraft:wool"
