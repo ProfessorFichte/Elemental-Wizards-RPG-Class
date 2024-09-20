@@ -1,6 +1,0 @@
-{
-  "parent": "wizards:item/medium_staff",
-  "textures": {
-    "layer0": "elemental_wizards_rpg:item/staff_aeternium_storm"
-  }
-}

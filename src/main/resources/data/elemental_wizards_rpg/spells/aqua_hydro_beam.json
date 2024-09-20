@@ -123,7 +123,7 @@
   "cost": {
     "item_id": "more_rpg_classes:aqua_stone",
     "exhaust" : 0.2,
-    "cooldown_duration": 10,
+    "cooldown_duration": 18,
     "cooldown_proportional": true,
     "cooldown_haste_affected": true
   }

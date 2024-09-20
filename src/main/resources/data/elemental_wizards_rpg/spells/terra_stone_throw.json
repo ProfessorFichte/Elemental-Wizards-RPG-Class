@@ -62,7 +62,7 @@
       "action": {
         "type": "DAMAGE",
         "damage": {
-          "spell_power_coefficient": 0.5
+          "spell_power_coefficient": 0.7
         }
       },
       "particles": [
@@ -75,7 +75,7 @@
           "max_speed": 0.008
         },
         {
-          "particle_id": "more_rpg_classesstone_explosion",
+          "particle_id": "more_rpg_classes:stone_explosion",
           "shape": "SPHERE",
           "origin": "CENTER",
           "count": 1.0,

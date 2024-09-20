@@ -80,10 +80,10 @@ public class WeaponsRegister {
     public static final Weapon.Entry featherWand = wand("wand_feather",
             Weapon.CustomMaterial.matching(ToolMaterials.WOOD, () -> Ingredient.ofItems(Items.STICK)),false)
             .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.AIR.id, 1));
-    public static final Weapon.Entry stormWand = wand("wand_storm",
+    public static final Weapon.Entry windWand = wand("wand_wind",
             Weapon.CustomMaterial.matching(ToolMaterials.IRON, () -> Ingredient.ofItems(Items.IRON_INGOT)),false)
             .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.AIR.id, 2));
-    public static final Weapon.Entry netheriteStormWand = wand("wand_netherite_storm",
+    public static final Weapon.Entry netheriteWindWand = wand("wand_netherite_wind",
             Weapon.CustomMaterial.matching(ToolMaterials.NETHERITE, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),true)
             .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.AIR.id, 3));
 
@@ -117,10 +117,10 @@ public class WeaponsRegister {
             .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.EARTH.id, 5))
             ;
 
-    public static final Weapon.Entry stormStaff= staff("staff_storm",
+    public static final Weapon.Entry windStaff= staff("staff_wind",
             Weapon.CustomMaterial.matching(ToolMaterials.DIAMOND, () -> Ingredient.ofItems(Items.GOLD_INGOT)),false)
             .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.AIR.id, 4));
-    public static final Weapon.Entry netheriteStormStaff = staff("staff_netherite_storm",
+    public static final Weapon.Entry netheriteWindStaff = staff("staff_netherite_wind",
             Weapon.CustomMaterial.matching(ToolMaterials.NETHERITE, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),true)
             .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.AIR.id, 5))
             ;
@@ -140,7 +140,7 @@ public class WeaponsRegister {
                     Weapon.CustomMaterial.matching(ToolMaterials.NETHERITE, ingredient("betterend:aeternium_ingot")),true)
                     .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.WATER.id, 6))
             ;
-            staff("betterend", "staff_aeternium_storm",
+            staff("betterend", "staff_aeternium_wind",
                     Weapon.CustomMaterial.matching(ToolMaterials.NETHERITE, ingredient("betterend:aeternium_ingot")),true)
                     .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.AIR.id, 6))
             ;

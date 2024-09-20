@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "elemental_wizards_rpg:staff_storm"
+  },
+  "result": {
+    "item": "elemental_wizards_rpg:staff_netherite_wind"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "B": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    "A A",
+    "B B"
+  ],
+  "result": {
+    "item": "elemental_wizards_rpg:wind_feet"
+  }
+}

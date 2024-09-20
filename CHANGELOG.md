@@ -1,10 +1,19 @@
 1.2.0
 Official Release of the Mod!
 ###GENERAL CHANGES
-- Storm Wizard Release!
+- Wind Wizard Release!
+- added Weapons & Armor for the new Wizard, that boosts air spell power
+- added 5 Spells for the Wind Wizard
+- Gust, Basic Ranged Damaging Wind Attack, with knockback
+- Air Cutter, Basic Ranged Damaging Wind Attack, with knockback
+- Aeroblast, High Damaging single target spell, also Knocking the target up
+- Updraft, Damaging the target constantly and reducing its attack speed (if the target is in the air, damage will be increasedand it stays in the air)
+- Tornado Summons a Spell Cloud-Tornado, damages the target heavily and knocking it up / sucking it in the tornado
 
 ###BALANCING
-
+- Buffed the tier 0 Aqua and Terra Spells a bit
+- Stone Flesh will now also buff your allies!
+- The Dripstone Circle Spell will spawn some new dripstones a bit away from the caster, to make the Earth Wizard more Offensive
 
 1.1.5
 - forgot to gave Terra Staves Better Combat tags for stave weapon attributes

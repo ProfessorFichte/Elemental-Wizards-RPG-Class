@@ -1,0 +1,91 @@
+{
+  "school": "AIR",
+  "range": 20,
+  "learn": {
+    "tier": 2
+  },
+  "cast": {
+    "duration": 1.5,
+    "animation": "spell_engine:two_handed_channeling",
+    "sound": {
+      "id": "spell_engine:generic_wind_charging"
+    },
+    "particles": [
+      {
+        "particle_id": "more_rpg_classes:small_gust",
+        "shape": "PILLAR",
+        "origin": "FEET",
+        "count": 2,
+        "min_speed": 0.05,
+        "max_speed": 0.2
+      },
+      {
+        "particle_id": "more_rpg_classes:small_gust",
+        "shape": "CIRCLE",
+        "origin": "FEET",
+        "count": 5.0,
+        "min_speed": 0.05,
+        "max_speed": 0.2
+      }
+    ]
+  },
+  "release": {
+    "target": {
+      "type": "CURSOR"
+    },
+    "animation": "spell_engine:one_handed_area_release"
+  },
+  "impact": [
+    {
+      "action": {
+        "type": "DAMAGE",
+        "damage": {
+          "spell_power_coefficient": 0.8
+        }
+      },
+      "particles": [
+        {
+          "particle_id": "more_rpg_classes:wind_vacuum",
+          "shape": "SPHERE",
+          "rotation": "LOOK",
+          "origin": "LAUNCH_POINT",
+          "count": 1.0,
+          "min_speed": 0.1,
+          "max_speed": 1.0
+        },
+        {
+          "particle_id": "more_rpg_classes:gust",
+          "shape": "CIRCLE",
+          "origin": "CENTER",
+          "count": 1.0,
+          "min_speed": 0.5,
+          "max_speed": 0.8
+        }
+      ],
+      "sound": {
+        "id": "more_rpg_classes:air_magic_impact2"
+      }
+    },
+    {
+      "action": {
+        "type": "STATUS_EFFECT",
+        "status_effect": {
+          "effect_id": "elemental_wizards_rpg:aeroblast",
+          "duration": 2,
+          "apply_mode": "SET",
+          "apply_limit": {
+            "health_base": 50
+          },
+          "show_particles": false
+        }
+      }
+    }
+  ],
+  "cost": {
+    "item_id": "more_rpg_classes:storm_stone",
+    "cooldown_duration": 8,
+    "exhaust" : 0.4,
+    "cooldown_proportional": true,
+    "cooldown_haste_affected": true
+  }
+}

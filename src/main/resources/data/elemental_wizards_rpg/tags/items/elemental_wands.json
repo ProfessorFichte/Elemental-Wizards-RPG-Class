@@ -6,9 +6,9 @@
     "elemental_wizards_rpg:wand_feather",
     "elemental_wizards_rpg:wand_aqua",
     "elemental_wizards_rpg:wand_terra",
-    "elemental_wizards_rpg:wand_storm",
+    "elemental_wizards_rpg:wand_wind",
     "elemental_wizards_rpg:wand_netherite_aqua",
     "elemental_wizards_rpg:wand_netherite_terra",
-    "elemental_wizards_rpg:wand_netherite_storm"
+    "elemental_wizards_rpg:wand_netherite_wind"
   ]
 }

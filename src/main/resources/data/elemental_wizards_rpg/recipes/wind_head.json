@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:feather"
+    },
+    "B": {
+      "tag": "minecraft:wool"
+    },
+    "C": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    "  C",
+    " C ",
+    "BBA"
+  ],
+  "result": {
+    "item": "elemental_wizards_rpg:wind_head"
+  }
+}

@@ -5,8 +5,8 @@
     "elemental_wizards_rpg:staff_terra",
     "elemental_wizards_rpg:staff_netherite_aqua",
     "elemental_wizards_rpg:staff_netherite_terra",
-    "elemental_wizards_rpg:staff_storm",
-    "elemental_wizards_rpg:staff_netherite_storm",
+    "elemental_wizards_rpg:staff_wind",
+    "elemental_wizards_rpg:staff_netherite_wind",
     {
       "id": "elemental_wizards_rpg:staff_crystal_aqua",
       "required": false
@@ -16,7 +16,7 @@
       "required": false
     },
     {
-      "id": "elemental_wizards_rpg:staff_aeternium_storm",
+      "id": "elemental_wizards_rpg:staff_aeternium_wind",
       "required": false
     }
   ]
