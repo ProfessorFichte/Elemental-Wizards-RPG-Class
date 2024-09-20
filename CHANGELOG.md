@@ -1,3 +1,6 @@
+1.2.1
+- forgot loot injection tags for the new Wind Wizard Equipment
+
 1.2.0
 Official Release of the Mod!
 ###GENERAL CHANGES

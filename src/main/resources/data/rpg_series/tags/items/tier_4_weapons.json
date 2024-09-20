@@ -8,6 +8,10 @@
     {
       "id": "elemental_wizards_rpg:staff_crystal_aqua",
       "required": false
+    },
+    {
+      "id": "elemental_wizards_rpg:staff_aeternium_wind",
+      "required": false
     }
   ]
 }
