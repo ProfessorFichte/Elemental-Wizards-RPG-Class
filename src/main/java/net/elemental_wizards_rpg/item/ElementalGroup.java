@@ -8,12 +8,10 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
-import net.more_rpg_classes.item.MRPGCGroup;
-import net.more_rpg_classes.item.MRPGCItems;
 
 public class ElementalGroup {
-    public static Identifier ID = new Identifier(ElementalMod.MOD_ID, "generic");
-    public static RegistryKey<ItemGroup> ELEMENTAL_WIZARD_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(),new Identifier(ElementalMod.MOD_ID,"generic"));
+    public static Identifier ID = Identifier.of(ElementalMod.MOD_ID, "generic");
+    public static RegistryKey<ItemGroup> ELEMENTAL_WIZARD_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(),Identifier.of(ElementalMod.MOD_ID,"generic"));
     public static ItemGroup ELEMENTAL_WIZARD;
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){

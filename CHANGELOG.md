@@ -1,3 +1,6 @@
+2.0.0
+- 1.21.x Release!
+
 1.2.0
 Official Release of the Mod!
 ###GENERAL CHANGES

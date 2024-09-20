@@ -2,7 +2,6 @@ package net.elemental_wizards_rpg.effect;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.predicate.entity.EntityPredicates;
@@ -14,31 +13,32 @@ public class BubbleFoamEffect extends StatusEffect {
     }
 
 
-    @Override
-    public void applyUpdateEffect(LivingEntity livingEntity, int amplifier) {
+    public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
         float range = 1.5F;
-        Box radius = new Box(livingEntity.getX() + range,
-                livingEntity.getY() + (float) range / 3,
-                livingEntity.getZ() + range,
-                livingEntity.getX() - range,
-                livingEntity.getY() - (float) range / 3,
-                livingEntity.getZ() - range);
+        Box radius = new Box(entity.getX() + range,
+                entity.getY() + (float) range / 3,
+                entity.getZ() + range,
+                entity.getX() - range,
+                entity.getY() - (float) range / 3,
+                entity.getZ() - range);
 
-        for(Entity entities : livingEntity.getEntityWorld().getOtherEntities(livingEntity, radius, EntityPredicates.VALID_LIVING_ENTITY)){
+        for(Entity entities : entity.getEntityWorld().getOtherEntities(entity, radius, EntityPredicates.VALID_LIVING_ENTITY)){
             if (entities != null) {
                 if(entities instanceof LivingEntity target){
-                    target.setVelocity((target.getX() - livingEntity.getX()) /4,  (target.getY() - livingEntity.getY()) /4, (target.getZ() - livingEntity.getZ()) /4);
+                    target.setVelocity((target.getX() - entity.getX()) /4,  (target.getY() - entity.getY()) /4, (target.getZ() - entity.getZ()) /4);
                 }
 
             }
         }
+        return true;
     }
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         return true;
     }
-    @Override
-    public void onApplied(LivingEntity pLivingEntity, AttributeContainer attributes, int pAmplifier){
-        pLivingEntity.heal(0.5F * (pAmplifier+1));
+
+    public void onApplied(LivingEntity entity, int amplifier) {
+        super.onApplied(entity, amplifier);
+        entity.heal(0.5F * (amplifier+1));
     }
 }

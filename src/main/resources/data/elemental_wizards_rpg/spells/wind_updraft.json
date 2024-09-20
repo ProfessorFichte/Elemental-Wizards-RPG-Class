@@ -43,7 +43,7 @@
       },
       "particles": [
         {
-          "particle_id": "more_rpg_classes:gust",
+          "particle_id": "gust",
           "shape": "SPHERE",
           "origin": "CENTER",
           "count": 1.0,

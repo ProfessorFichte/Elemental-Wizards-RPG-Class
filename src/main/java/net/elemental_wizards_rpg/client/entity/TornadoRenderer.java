@@ -26,7 +26,7 @@ public class TornadoRenderer<T extends TornadoEntity> extends EntityRenderer<T> 
         return null;
     }
 
-    public static final Identifier modelId = new Identifier(MOD_ID, "effect/tornado");
+    public static final Identifier modelId = Identifier.of(MOD_ID, "effect/tornado");
     private static final RenderLayer layer =
             RenderLayer.getEntityTranslucentEmissive(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE, true);
 

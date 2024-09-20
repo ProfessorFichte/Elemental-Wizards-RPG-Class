@@ -67,7 +67,7 @@ public class ElementalMod implements ModInitializer {
 	static {
 		DripstoneBigEntity.ENTITY_TYPE = Registry.register(
 				Registries.ENTITY_TYPE,
-				new Identifier(MOD_ID, "dripstone_big"),
+				Identifier.of(MOD_ID, "dripstone_big"),
 				FabricEntityTypeBuilder.<DripstoneBigEntity>create(SpawnGroup.MISC, DripstoneBigEntity::new)
 						.dimensions(EntityDimensions.changing(6F, 0.5F)) // dimensions in Minecraft units of the render
 						.fireImmune()
@@ -77,7 +77,7 @@ public class ElementalMod implements ModInitializer {
 		);
 		DripstoneSmallEntity.ENTITY_TYPE = Registry.register(
 				Registries.ENTITY_TYPE,
-				new Identifier(MOD_ID, "dripstone_small"),
+				Identifier.of(MOD_ID, "dripstone_small"),
 				FabricEntityTypeBuilder.<DripstoneSmallEntity>create(SpawnGroup.MISC, DripstoneSmallEntity::new)
 						.dimensions(EntityDimensions.changing(6F, 0.5F)) // dimensions in Minecraft units of the render
 						.fireImmune()
@@ -87,7 +87,7 @@ public class ElementalMod implements ModInitializer {
 		);
 		TornadoEntity.ENTITY_TYPE = Registry.register(
 				Registries.ENTITY_TYPE,
-				new Identifier(MOD_ID, "tornado"),
+				Identifier.of(MOD_ID, "tornado"),
 				FabricEntityTypeBuilder.<TornadoEntity>create(SpawnGroup.MISC, TornadoEntity::new)
 						.dimensions(EntityDimensions.changing(6F, 0.5F))
 						.fireImmune()

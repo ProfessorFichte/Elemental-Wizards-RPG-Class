@@ -16,8 +16,8 @@ public class TornadoEffect extends SpellVulnerabilityStatusEffect {
     protected TornadoEffect(StatusEffectCategory category, int color) {
         super(category, color);
     }
-    @Override
-    public void applyUpdateEffect(LivingEntity entity, int pAmplifier) {
+
+    public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,1,0,false,false,false));
         float range = 5.0F;
         Box radius = new Box(entity.getX() + range,
@@ -33,13 +33,15 @@ public class TornadoEffect extends SpellVulnerabilityStatusEffect {
                     entity.setVelocity(currentMovementTornado.x, currentMovementTornado.y+0.15F, currentMovementTornado.z);
                 }
             } else{
-                entity.removeStatusEffect(Effects.TORNADO);
+                entity.removeStatusEffect(Effects.TORNADO.registryEntry);
             }
         }
 
+        return true;
     }
-    @Override
-    public void onApplied(LivingEntity entity, AttributeContainer attributes, int pAmplifier){
+
+    public void onApplied(LivingEntity entity, int amplifier) {
+        super.onApplied(entity, amplifier);
         Vec3d currentMovement = entity.getVelocity();
         entity.setVelocity(currentMovement.x, currentMovement.y + 0.65F, currentMovement.z);
         entity.velocityModified = true;

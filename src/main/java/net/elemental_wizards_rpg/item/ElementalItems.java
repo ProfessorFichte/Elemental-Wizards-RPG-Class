@@ -1,19 +1,17 @@
 package net.elemental_wizards_rpg.item;
 
-import net.elemental_wizards_rpg.ElementalMod;
 import net.elemental_wizards_rpg.item.armor.Armors;
 import net.elemental_wizards_rpg.item.weapons.WeaponsRegister;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.more_rpg_classes.MRPGCMod;
 import net.spell_engine.api.item.trinket.SpellBooks;
 
 import java.util.HashMap;
+
+import static net.elemental_wizards_rpg.ElementalMod.MOD_ID;
 
 public class ElementalItems {
     public static final HashMap<String, Item> entries;
@@ -31,15 +29,19 @@ public class ElementalItems {
         }
     }
 
-    public static Item ELEMENTAL_ESSENCE = new Item(new FabricItemSettings().maxCount(64));
+
+
+    public static final Item ELEMENTAL_ESSENCE = registerItem("elemental_essence", new Item(new Item.Settings()));
+
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, Identifier.of(MOD_ID, name), item);
+    }
 
     public static void registerModItems(){
-        SpellBooks.createAndRegister(new Identifier(ElementalMod.MOD_ID,"aqua"), ElementalGroup.ELEMENTAL_WIZARD_KEY);
-        SpellBooks.createAndRegister(new Identifier(ElementalMod.MOD_ID,"terra"), ElementalGroup.ELEMENTAL_WIZARD_KEY);
-        SpellBooks.createAndRegister(new Identifier(ElementalMod.MOD_ID,"wind"), ElementalGroup.ELEMENTAL_WIZARD_KEY);
+        SpellBooks.createAndRegister(Identifier.of(MOD_ID,"aqua"), ElementalGroup.ELEMENTAL_WIZARD_KEY);
+        SpellBooks.createAndRegister(Identifier.of(MOD_ID,"terra"), ElementalGroup.ELEMENTAL_WIZARD_KEY);
+        SpellBooks.createAndRegister(Identifier.of(MOD_ID,"wind"), ElementalGroup.ELEMENTAL_WIZARD_KEY);
 
-
-        Registry.register(Registries.ITEM,new Identifier(ElementalMod.MOD_ID,"elemental_essence"),ELEMENTAL_ESSENCE);
     }
 
 }

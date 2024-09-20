@@ -27,15 +27,15 @@ public class ElementalClient implements ClientModInitializer {
                 DripstoneSmallRenderer.modelId,
                 BubbleFoamRenderer.modelId_base,
                 TornadoRenderer.modelId,
-                new Identifier(ElementalMod.MOD_ID, "projectile/stone_spear"),
-                new Identifier(ElementalMod.MOD_ID, "projectile/spell_stone")
+                Identifier.of(ElementalMod.MOD_ID, "projectile/stone_spear"),
+                Identifier.of(ElementalMod.MOD_ID, "projectile/spell_stone")
         ));
 
-        CustomModelStatusEffect.register(Effects.BUBBLE_FOAM, new BubbleFoamRenderer());
-        CustomParticleStatusEffect.register(Effects.SOAKED, new SoakedParticles(5));
-        CustomParticleStatusEffect.register(Effects.CLEANSING_WATER, new CleansingWaterParticleSpawner());
-        CustomParticleStatusEffect.register(Effects.BUBBLE_FOAM, new BubbleFoamParticleSpawner());
-        CustomParticleStatusEffect.register(Effects.STONE_FLESH, new StoneFleshParticleSpawner());
+        CustomModelStatusEffect.register(Effects.BUBBLE_FOAM.effect, new BubbleFoamRenderer());
+        CustomParticleStatusEffect.register(Effects.SOAKED.effect, new SoakedParticles(5));
+        CustomParticleStatusEffect.register(Effects.CLEANSING_WATER.effect, new CleansingWaterParticleSpawner());
+        CustomParticleStatusEffect.register(Effects.BUBBLE_FOAM.effect, new BubbleFoamParticleSpawner());
+        CustomParticleStatusEffect.register(Effects.STONE_FLESH.effect, new StoneFleshParticleSpawner());
 
         EntityRendererRegistry.register(DripstoneBigEntity.ENTITY_TYPE, DripstoneBigRenderer::new);
     }

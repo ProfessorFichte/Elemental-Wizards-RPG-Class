@@ -54,7 +54,7 @@
           "max_speed": 1.0
         },
         {
-          "particle_id": "more_rpg_classes:gust",
+          "particle_id": "gust",
           "shape": "CIRCLE",
           "origin": "CENTER",
           "count": 1.0,

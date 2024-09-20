@@ -18,8 +18,7 @@ public class CleansingWaterEffect extends StatusEffect {
     }
 
 
-    @Override
-    public void applyUpdateEffect(LivingEntity pLivingEntity, int pAmplifier) {
+    public boolean applyUpdateEffect(LivingEntity pLivingEntity, int pAmplifier) {
         World world = pLivingEntity.getEntityWorld();
 
         if (pLivingEntity.getHealth() < pLivingEntity.getMaxHealth()) {
@@ -49,14 +48,15 @@ public class CleansingWaterEffect extends StatusEffect {
                 }
             }
             pLivingEntity.playSound(SoundEvents.BLOCK_FIRE_EXTINGUISH,2,1);
-            pLivingEntity.removeStatusEffect(Effects.CLEANSING_WATER);
+            pLivingEntity.removeStatusEffect(Effects.CLEANSING_WATER.registryEntry);
         }
+        return true;
     }
 
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         int i;
-        if (this == Effects.CLEANSING_WATER) {
+        if (this == Effects.CLEANSING_WATER.registryEntry) {
             i = 35 >> amplifier;
             if (i > 0) {
                 return duration % i == 0;
@@ -67,10 +67,10 @@ public class CleansingWaterEffect extends StatusEffect {
         return true;
     }
 
-    @Override
-    public void onApplied(LivingEntity pLivingEntity, AttributeContainer attributes, int pAmplifier){
-        if(pLivingEntity.isPlayer() && pLivingEntity.getMaxHealth() == pLivingEntity.getHealth()){
-            CustomMethods.clearNegativeEffects(pLivingEntity,true);
+    public void onApplied(LivingEntity entity, int amplifier) {
+        super.onApplied(entity, amplifier);
+        if(entity.isPlayer() && entity.getMaxHealth() == entity.getHealth()){
+            CustomMethods.clearNegativeEffects(entity,true);
         }
     }
 }

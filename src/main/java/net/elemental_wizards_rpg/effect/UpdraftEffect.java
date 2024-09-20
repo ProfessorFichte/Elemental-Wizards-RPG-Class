@@ -1,7 +1,6 @@
 package net.elemental_wizards_rpg.effect;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -13,22 +12,25 @@ public class UpdraftEffect extends SpellVulnerabilityStatusEffect {
         super(category, color);
     }
     public boolean ground_on_apply = false;
-    @Override
-    public void applyUpdateEffect(LivingEntity entity, int pAmplifier) {
+
+    public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
         if(!entity.isOnGround()){
             Vec3d currentMovement = entity.getVelocity();
             entity.setVelocity(currentMovement.x, currentMovement.y+0.05F, currentMovement.z);
             entity.velocityModified = true;
         }
+        return true;
     }
-    @Override
-    public void onApplied(LivingEntity entity, AttributeContainer attributes, int pAmplifier){
+
+
+    public void onApplied(LivingEntity entity, int amplifier) {
+        super.onApplied(entity, amplifier);
         if(!entity.isOnGround()){
             ground_on_apply = true;
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,15,0,false,false,false));
         }else{
-            if(entity.hasStatusEffect(Effects.UPDRAFT)){
-                entity.removeStatusEffect(Effects.UPDRAFT);
+            if(entity.hasStatusEffect(Effects.UPDRAFT.registryEntry)){
+                entity.removeStatusEffect(Effects.UPDRAFT.registryEntry);
             }
         }
 

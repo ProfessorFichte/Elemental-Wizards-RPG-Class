@@ -13,11 +13,12 @@ public class TremblingEffect extends StatusEffect {
         super(category, color);
     }
     @Override
-    public void applyUpdateEffect(LivingEntity entity, int pAmplifier) {
-        if(pAmplifier == 3){
-            entity.addStatusEffect(new StatusEffectInstance(MRPGCEffects.STUNNED,effectsConfig.value.trembling_stun_apply_duration * 10));
-            entity.removeStatusEffect(Effects.TREMBLING);
+    public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
+        if(amplifier == 3){
+            entity.addStatusEffect(new StatusEffectInstance(MRPGCEffects.STUNNED.registryEntry,effectsConfig.value.trembling_stun_apply_duration * 10));
+            entity.removeStatusEffect(Effects.TREMBLING.registryEntry);
         }
+        return true;
     }
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {

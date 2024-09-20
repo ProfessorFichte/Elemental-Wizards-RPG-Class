@@ -3,10 +3,16 @@ package net.elemental_wizards_rpg.item.armor;
 import net.elemental_wizards_rpg.ElementalMod;
 import net.elemental_wizards_rpg.item.ElementalGroup;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Identifier;
 import net.more_rpg_classes.custom.MoreSpellSchools;
 import net.spell_engine.api.item.ItemConfig;
 import net.spell_engine.api.item.armor.Armor;
@@ -19,6 +25,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
 
+import static net.elemental_wizards_rpg.ElementalMod.MOD_ID;
+
 public class Armors {
     private static final Supplier<Ingredient> WOOL_INGREDIENTS = () -> { return Ingredient.ofItems(
             Items.WHITE_WOOL, Items.ORANGE_WOOL, Items.MAGENTA_WOOL, Items.LIGHT_BLUE_WOOL, Items.YELLOW_WOOL,
@@ -27,13 +35,6 @@ public class Armors {
     );
     };
 
-
-
-    public static final ArrayList<Armor.Entry> entries = new ArrayList<>();
-    private static Armor.Entry create(Armor.CustomMaterial material, ItemConfig.ArmorSet defaults) {
-        return new Armor.Entry(material, null, defaults);
-    }
-
     public static final float t1RobePower = 1.0F;
     public static final float t2RobePower = 0.25F;
     private static final float t2Haste = 0.03F;
@@ -41,15 +42,64 @@ public class Armors {
     private static final float t2CritDamage = 0.10F;
 
 
+    public static RegistryEntry<ArmorMaterial> material(String name,
+                                                        int protectionHead, int protectionChest, int protectionLegs, int protectionFeet,
+                                                        int enchantability, RegistryEntry<SoundEvent> equipSound, Supplier<Ingredient> repairIngredient) {
+        var material = new ArmorMaterial(
+                Map.of(
+                        ArmorItem.Type.HELMET, protectionHead,
+                        ArmorItem.Type.CHESTPLATE, protectionChest,
+                        ArmorItem.Type.LEGGINGS, protectionLegs,
+                        ArmorItem.Type.BOOTS, protectionFeet),
+                enchantability, equipSound, repairIngredient,
+                List.of(new ArmorMaterial.Layer(Identifier.of(MOD_ID, name))),
+                0,0
+        );
+        return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(MOD_ID, name), material);
+    }
+
+    public static RegistryEntry<ArmorMaterial> material_elemental = material(
+            "elemental",
+            1, 3, 2, 1,
+            9,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, WOOL_INGREDIENTS);
+
+    public static RegistryEntry<ArmorMaterial> material_kelp = material(
+            "kelp",
+            1, 3, 2, 1,
+            10,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, WOOL_INGREDIENTS);
+
+    public static RegistryEntry<ArmorMaterial> material_dripstone = material(
+            "dripstone",
+            1, 3, 2, 1,
+            10,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, WOOL_INGREDIENTS);
+    public static RegistryEntry<ArmorMaterial> material_wind = material(
+            "wind",
+            1, 3, 2, 1,
+            10,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, WOOL_INGREDIENTS);
+
+
+    public static final ArrayList<Armor.Entry> entries = new ArrayList<>();
+    private static Armor.Entry create(RegistryEntry<ArmorMaterial> material, Identifier id, int durability, Armor.Set.ItemFactory factory, ItemConfig.ArmorSet defaults) {
+        var entry = Armor.Entry.create(
+                material,
+                id,
+                durability,
+                factory,
+                defaults);
+        entries.add(entry);
+        return entry;
+    }
+
     public static final Armor.Set elementalArmor =
             create(
-                    new Armor.CustomMaterial(
-                            "elemental",
-                            10,
-                            9,
-                            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
-                            WOOL_INGREDIENTS
-                    ),
+                    material_elemental,
+                    Identifier.of(MOD_ID, "elemental"),
+                    10,
+                    ElementalRobe::new,
                     ItemConfig.ArmorSet.with(
                             new ItemConfig.ArmorSet.Piece(1)
                                     .addAll(List.of(
@@ -79,24 +129,15 @@ public class Armors {
                                             ItemConfig.Attribute.bonus(MoreSpellSchools.WATER.id, t1RobePower),
                                             ItemConfig.Attribute.bonus(SpellSchools.FIRE.id, t1RobePower)
                                     ))
-                    ))   .bundle(material -> new Armor.Set<>(ElementalMod.MOD_ID,
-                            new ElementalRobe(material, ArmorItem.Type.HELMET, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.CHESTPLATE, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.LEGGINGS, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.BOOTS, new Item.Settings())
                     ))
-                    .put(entries).armorSet()
-                    .allowSpellPowerEnchanting(true);
+                    .armorSet();
 
     public static final Armor.Set kelpArmor =
             create(
-                    new Armor.CustomMaterial(
-                            "kelp",
-                            20,
-                            10,
-                            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
-                            WOOL_INGREDIENTS
-                    ),
+                    material_kelp,
+                    Identifier.of(MOD_ID, "kelp"),
+                    20,
+                    ElementalRobe::new,
                     ItemConfig.ArmorSet.with(
                             new ItemConfig.ArmorSet.Piece(1)
                                     .addAll(List.of(
@@ -118,24 +159,15 @@ public class Armors {
                                             ItemConfig.Attribute.multiply(MoreSpellSchools.WATER.id, t2RobePower),
                                             ItemConfig.Attribute.multiply(SpellPowerMechanics.HASTE.id, t2Haste)
                                     ))
-                    ))   .bundle(material -> new Armor.Set<>(ElementalMod.MOD_ID,
-                            new ElementalRobe(material, ArmorItem.Type.HELMET, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.CHESTPLATE, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.LEGGINGS, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.BOOTS, new Item.Settings())
                     ))
-                    .put(entries).armorSet()
-                    .allowSpellPowerEnchanting(true);
+                    .armorSet();
 
     public static final Armor.Set dripstoneArmor =
             create(
-                    new Armor.CustomMaterial(
-                            "dripstone",
-                            20,
-                            10,
-                            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
-                            WOOL_INGREDIENTS
-                    ),
+                    material_dripstone,
+                    Identifier.of(MOD_ID, "dripstone"),
+                    20,
+                    ElementalRobe::new,
                     ItemConfig.ArmorSet.with(
                             new ItemConfig.ArmorSet.Piece(1)
                                     .addAll(List.of(
@@ -157,24 +189,15 @@ public class Armors {
                                             ItemConfig.Attribute.multiply(MoreSpellSchools.EARTH.id, t2RobePower),
                                             ItemConfig.Attribute.multiply(SpellPowerMechanics.CRITICAL_CHANCE.id, t2CritChance)
                                     ))
-                    ))   .bundle(material -> new Armor.Set<>(ElementalMod.MOD_ID,
-                            new ElementalRobe(material, ArmorItem.Type.HELMET, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.CHESTPLATE, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.LEGGINGS, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.BOOTS, new Item.Settings())
                     ))
-                    .put(entries).armorSet()
-                    .allowSpellPowerEnchanting(true);
+                    .armorSet();
 
     public static final Armor.Set windArmor =
             create(
-                    new Armor.CustomMaterial(
-                            "wind",
-                            20,
-                            10,
-                            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
-                            WOOL_INGREDIENTS
-                    ),
+                    material_wind,
+                    Identifier.of(MOD_ID, "wind"),
+                    20,
+                    ElementalRobe::new,
                     ItemConfig.ArmorSet.with(
                             new ItemConfig.ArmorSet.Piece(1)
                                     .addAll(List.of(
@@ -196,14 +219,8 @@ public class Armors {
                                             ItemConfig.Attribute.multiply(MoreSpellSchools.AIR.id, t2RobePower),
                                             ItemConfig.Attribute.multiply(SpellPowerMechanics.CRITICAL_DAMAGE.id, t2CritDamage)
                                     ))
-                    ))   .bundle(material -> new Armor.Set<>(ElementalMod.MOD_ID,
-                            new ElementalRobe(material, ArmorItem.Type.HELMET, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.CHESTPLATE, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.LEGGINGS, new Item.Settings()),
-                            new ElementalRobe(material, ArmorItem.Type.BOOTS, new Item.Settings())
                     ))
-                    .put(entries).armorSet()
-                    .allowSpellPowerEnchanting(true);
+                    .armorSet();
 
     public static void register(Map<String, ItemConfig.ArmorSet> configs) {
         Armor.register(configs, entries, ElementalGroup.ELEMENTAL_WIZARD_KEY);

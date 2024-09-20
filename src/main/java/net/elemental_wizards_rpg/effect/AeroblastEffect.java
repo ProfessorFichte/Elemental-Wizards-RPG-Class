@@ -1,7 +1,6 @@
 package net.elemental_wizards_rpg.effect;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -14,7 +13,8 @@ public class AeroblastEffect extends StatusEffect {
     }
 
     @Override
-    public void onApplied(LivingEntity entity, AttributeContainer attributes, int pAmplifier){
+    public void onApplied(LivingEntity entity, int amplifier) {
+        super.onApplied(entity, amplifier);
             Vec3d currentMovement = entity.getVelocity();
             entity.setVelocity(currentMovement.x, currentMovement.y + 0.5F, currentMovement.z);
             entity.velocityModified = true;
