@@ -72,6 +72,7 @@ public class CustomSpells {
                             entity.velocityModified = true;
                             SpellHelper.performImpacts(entity.getWorld(), data1.caster(), entity, entity, new SpellInfo(getSpell(Identifier.of(MOD_ID, "terra_earthquake")),Identifier.of(MOD_ID)), data1.impactContext());
                         }
+
                     }
                 }
             }

@@ -1,3 +1,7 @@
+2.0.1
+- Netherite Wind Staff & Wand recipe had a typo
+- nerfed Air Cutter ang Gust Knockback a bit
+
 2.0.0
 - 1.21.x Release!
 
