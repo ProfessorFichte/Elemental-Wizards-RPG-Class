@@ -4,7 +4,7 @@
     "item": "minecraft:netherite_ingot"
   },
   "base": {
-    "item": "elemental_wizards_rpg:staff_storm"
+    "item": "elemental_wizards_rpg:staff_wind"
   },
   "result": {
     "item": "elemental_wizards_rpg:staff_netherite_wind"

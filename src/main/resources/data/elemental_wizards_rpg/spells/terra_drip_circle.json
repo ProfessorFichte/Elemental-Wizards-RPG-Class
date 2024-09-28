@@ -48,7 +48,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -82,7 +82,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -116,7 +116,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -150,7 +150,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -184,7 +184,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -218,7 +218,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -252,7 +252,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -286,7 +286,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -320,7 +320,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -354,7 +354,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -388,7 +388,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -422,7 +422,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -458,7 +458,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -492,7 +492,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -526,7 +526,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -560,7 +560,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -594,7 +594,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -628,7 +628,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -662,7 +662,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -696,7 +696,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -730,7 +730,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -764,7 +764,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -798,7 +798,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -832,7 +832,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -866,7 +866,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -900,7 +900,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -934,7 +934,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -968,7 +968,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1002,7 +1002,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1036,7 +1036,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1070,7 +1070,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1104,7 +1104,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1138,7 +1138,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1172,7 +1172,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1206,7 +1206,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1240,7 +1240,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1276,7 +1276,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1310,7 +1310,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1344,7 +1344,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1378,7 +1378,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1412,7 +1412,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1446,7 +1446,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1480,7 +1480,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1514,7 +1514,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1548,7 +1548,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1582,7 +1582,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1616,7 +1616,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1650,7 +1650,7 @@
               "vertical_range_multiplier": 1.5
             }
           },
-          "impact_tick_interval": 10,
+          "impact_tick_interval": 20,
           "time_to_live_seconds": 5,
           "client_data": {
             "model": {
@@ -1686,7 +1686,7 @@
       "action": {
         "type": "DAMAGE",
         "damage": {
-          "spell_power_coefficient": 0.85
+          "spell_power_coefficient": 0.65
         }
       },
       "particles": [
@@ -1725,7 +1725,7 @@
 
   "cost": {
     "item_id": "more_rpg_classes:terra_stone",
-    "cooldown_duration": 16,
+    "cooldown_duration": 18,
     "cooldown_haste_affected": true
   }
 }

@@ -37,6 +37,7 @@ public class BubbleFoamEffect extends StatusEffect {
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         return true;
     }
+
     @Override
     public void onApplied(LivingEntity pLivingEntity, AttributeContainer attributes, int pAmplifier){
         pLivingEntity.heal(0.5F * (pAmplifier+1));

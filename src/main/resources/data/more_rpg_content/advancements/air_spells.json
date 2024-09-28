@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "elemental_wizards_rpg:storm_spell_book"
+      "item": "elemental_wizards_rpg:wind_spell_book"
     },
     "title": {
       "translate": "advancements.more_rpg_content.air_spells.title"
@@ -20,7 +20,7 @@
       "trigger": "spell_engine:spell_binding",
       "conditions": {
         "complete": true,
-        "spell_pool": "elemental_wizards_rpg:storm"
+        "spell_pool": "elemental_wizards_rpg:wind"
       }
     }
   },
