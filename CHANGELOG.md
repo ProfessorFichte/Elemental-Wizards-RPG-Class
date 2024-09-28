@@ -1,3 +1,7 @@
+2.0.2
+- nerfed Dripstone Circles Damage Multiplier and impact time
+- fixed the missing Wind Spell Book Advancement
+
 2.0.1
 - Netherite Wind Staff & Wand recipe had a typo
 - nerfed Air Cutter ang Gust Knockback a bit
