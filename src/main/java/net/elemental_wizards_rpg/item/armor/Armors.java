@@ -265,7 +265,7 @@ public class Armors {
                                     )),
                             new ItemConfig.ArmorSet.Piece(1)
                                     .addAll(List.of(
-                                            ItemConfig.Attribute.multiply(MoreSpellSchools.WATER.id, spell_power_t2),
+                                            ItemConfig.Attribute.multiply(MoreSpellSchools.WATER.id, spell_power_t3),
                                             ItemConfig.Attribute.multiply(SpellPowerMechanics.HASTE.id, haste_t3)
                                     ))
                     ))

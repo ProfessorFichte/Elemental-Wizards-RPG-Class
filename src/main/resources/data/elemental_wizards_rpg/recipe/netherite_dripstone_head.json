@@ -7,7 +7,7 @@
     "item": "elemental_wizards_rpg:dripstone_head"
   },
   "result": {
-    "item": "elemental_wizards_rpg:netherite_dripstone_head"
+    "id": "elemental_wizards_rpg:netherite_dripstone_head"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"

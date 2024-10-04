@@ -1,6 +1,6 @@
 2.1.0
-- Added 3rd tier of Netherite Armor
-- Changed balancing of Weapons to match the RPG Series balancing
+- Added 3rd tier Armor, Netherite Armor for Elemental Wizards
+- Changed balancing of Weapons & Armor, to match the new RPG Series balancing
 
 2.0.2
 - nerfed Dripstone Circles Damage Multiplier and impact time

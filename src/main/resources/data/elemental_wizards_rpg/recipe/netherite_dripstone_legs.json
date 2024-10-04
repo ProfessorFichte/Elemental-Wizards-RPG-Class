@@ -7,7 +7,7 @@
     "item": "elemental_wizards_rpg:dripstone_legs"
   },
   "result": {
-    "item": "elemental_wizards_rpg:netherite_dripstone_legs"
+    "id": "elemental_wizards_rpg:netherite_dripstone_legs"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"

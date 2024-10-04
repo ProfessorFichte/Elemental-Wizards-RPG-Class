@@ -7,7 +7,7 @@
     "item": "elemental_wizards_rpg:kelp_chest"
   },
   "result": {
-    "item": "elemental_wizards_rpg:netherite_kelp_chest"
+    "id": "elemental_wizards_rpg:netherite_kelp_chest"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"

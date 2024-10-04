@@ -7,7 +7,7 @@
     "item": "elemental_wizards_rpg:wind_feet"
   },
   "result": {
-    "item": "elemental_wizards_rpg:netherite_wind_feet"
+    "id": "elemental_wizards_rpg:netherite_wind_feet"
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"
