@@ -1,3 +1,7 @@
+2.1.0
+- Added 3rd tier of Netherite Armor
+- Changed balancing of Weapons to match the RPG Series balancing
+
 2.0.2
 - nerfed Dripstone Circles Damage Multiplier and impact time
 - fixed the missing Wind Spell Book Advancement
