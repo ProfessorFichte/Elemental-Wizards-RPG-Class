@@ -1,3 +1,6 @@
+2.1.1
+- forgot to add minecraft armor tags for enchanting
+
 2.1.0
 - Added 3rd tier Armor, Netherite Armor for Elemental Wizards
 - Changed balancing of Weapons & Armor, to match the new RPG Series balancing

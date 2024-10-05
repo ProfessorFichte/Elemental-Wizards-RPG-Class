@@ -3,6 +3,9 @@
     "elemental_wizards_rpg:elemental_chest",
     "elemental_wizards_rpg:kelp_chest",
     "elemental_wizards_rpg:dripstone_chest",
-    "elemental_wizards_rpg:wind_chest"
+    "elemental_wizards_rpg:wind_chest",
+    "elemental_wizards_rpg:netherite_kelp_chest",
+    "elemental_wizards_rpg:netherite_dripstone_chest",
+    "elemental_wizards_rpg:netherite_wind_chest"
   ]
 }
