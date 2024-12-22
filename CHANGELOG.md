@@ -1,3 +1,8 @@
+2.2.0
+- Spell Engine 1.2 Update
+- added the Valkyrie Elementalist Staff (Aether Variant)
+- made the outlines for the Wind Staff a bit darker for better contrast
+
 2.1.1
 - forgot to add minecraft armor tags for enchanting
 

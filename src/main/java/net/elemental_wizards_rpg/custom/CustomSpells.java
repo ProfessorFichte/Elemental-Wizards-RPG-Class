@@ -4,6 +4,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Vec3d;
 import net.spell_engine.api.spell.CustomSpellHandler;
+import net.spell_engine.api.spell.Spell;
 import net.spell_engine.api.spell.SpellInfo;
 import net.spell_engine.internals.SpellHelper;
 import net.spell_engine.utils.TargetHelper;
@@ -22,6 +23,8 @@ public class CustomSpells {
         ///WATER_SPELLS
         //HIGH_TIDES
         CustomSpellHandler.register(Identifier.of(MOD_ID, "aqua_high_tides"), (data) -> {
+            SpellInfo spellinfo = new SpellInfo(getSpell(Identifier.of(MOD_ID, "aqua_high_tides")),Identifier.of(MOD_ID));
+            Spell.Impact[] impacts = getSpell(Identifier.of(MOD_ID, "aqua_high_tides")).impact;
             CustomSpellHandler.Data data1 = (CustomSpellHandler.Data) data;
             Predicate<Entity> selectionPredicate = (target2) -> {
                 return (TargetHelper.actionAllowed(TargetHelper.TargetingMode.AREA, TargetHelper.Intent.HARMFUL, data1.caster(), target2)
@@ -36,7 +39,7 @@ public class CustomSpells {
                     Vec3d currentMovement = entity.getVelocity();
                     entity.setVelocity(currentMovement.x, currentMovement.y + knockup_high_tides_targets, currentMovement.z);
                     entity.velocityModified = true;
-                    SpellHelper.performImpacts(entity.getWorld(), data1.caster(), entity, entity, new SpellInfo(getSpell(Identifier.of(MOD_ID, "aqua_high_tides")),Identifier.of(MOD_ID)), data1.impactContext());
+                    SpellHelper.performImpacts(entity.getWorld(), data1.caster(), entity, entity, spellinfo,impacts ,data1.impactContext());
                     /*if(entity.isOnFire()){
                         entity.playSound(SoundEvents.BLOCK_FIRE_EXTINGUISH,1,1);
                         ParticleHelper.sendBatches(entity, getSpell(new Identifier(MOD_ID, "scald")).impact[0].particles);
@@ -51,6 +54,8 @@ public class CustomSpells {
         ///EARTH_SPELLS
         //EARTHQUAKE
         CustomSpellHandler.register(Identifier.of(MOD_ID, "terra_earthquake"), (data) -> {
+            SpellInfo spellinfo = new SpellInfo(getSpell(Identifier.of(MOD_ID, "terra_earthquake")),Identifier.of(MOD_ID));
+            Spell.Impact[] impacts = getSpell(Identifier.of(MOD_ID, "terra_earthquake")).impact;
             CustomSpellHandler.Data data1 = (CustomSpellHandler.Data) data;
             Predicate<Entity> selectionPredicate = (target2) -> {
                 return (TargetHelper.actionAllowed(TargetHelper.TargetingMode.AREA, TargetHelper.Intent.HARMFUL, data1.caster(), target2)
@@ -70,7 +75,7 @@ public class CustomSpells {
                             Vec3d currentMovement = entity.getVelocity();
                             entity.setVelocity(currentMovement.x + randx, currentMovement.y + 0.1, currentMovement.z +randz);
                             entity.velocityModified = true;
-                            SpellHelper.performImpacts(entity.getWorld(), data1.caster(), entity, entity, new SpellInfo(getSpell(Identifier.of(MOD_ID, "terra_earthquake")),Identifier.of(MOD_ID)), data1.impactContext());
+                            SpellHelper.performImpacts(entity.getWorld(), data1.caster(), entity, entity, spellinfo,impacts ,data1.impactContext());
                         }
 
                     }

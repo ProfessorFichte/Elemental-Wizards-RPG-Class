@@ -124,6 +124,7 @@ public class WeaponsRegister {
 
     private static final String BETTER_END = "betterend";
     private static final String BETTER_NETHER = "betternether";
+    private static final String AETHER = "aether";
     //Registration
     public static void register(Map<String,ItemConfig.Weapon> configs) {
         if(FabricLoader.getInstance().isModLoaded(BETTER_NETHER)) {
@@ -141,6 +142,15 @@ public class WeaponsRegister {
             ;
             staff("betterend", "staff_aeternium_wind",
                     Weapon.CustomMaterial.matching(ToolMaterials.NETHERITE, repair))
+                    .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.AIR.id, 7))
+            ;
+        }
+        if(FabricLoader.getInstance().isModLoaded(AETHER)) {
+            var repair = ingredient("aether:ambrosium_shard", FabricLoader.getInstance().isModLoaded(AETHER), Items.NETHERITE_INGOT);
+            staff(AETHER, "staff_aether",
+                    Weapon.CustomMaterial.matching(ToolMaterials.NETHERITE, repair))
+                    .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.EARTH.id, 7))
+                    .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.WATER.id, 7))
                     .attribute(ItemConfig.Attribute.bonus(MoreSpellSchools.AIR.id, 7))
             ;
         }
