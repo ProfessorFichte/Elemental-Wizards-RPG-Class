@@ -4,6 +4,9 @@
   "learn": {
     "tier": 4
   },
+  "scroll":{
+    "generate": false
+  },
   "cast": {
     "duration": 5,
     "animation": "spell_engine:two_handed_channeling",

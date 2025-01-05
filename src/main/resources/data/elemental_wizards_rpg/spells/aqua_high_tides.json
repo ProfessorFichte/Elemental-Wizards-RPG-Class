@@ -4,6 +4,9 @@
   "learn": {
     "tier": 3
   },
+  "scroll":{
+    "generate": false
+  },
   "cast": {
     "animation": "spell_engine:one_handed_sky_charge",
     "duration": 6,

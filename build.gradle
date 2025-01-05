@@ -66,7 +66,6 @@ dependencies {
 	implementation include("com.github.ZsoltMolnarrr:TinyConfig:${project.tiny_config_version}")
 
 	modImplementation("dev.kosmx.player-anim:player-animation-lib-fabric:${project.player_anim_version}")
-	//modImplementation("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}")
 	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
@@ -75,10 +74,8 @@ dependencies {
 	modImplementation("maven.modrinth:spell-power:${project.spell_power_version}-fabric")
 	include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.0-rc.4")))
 	modImplementation("maven.modrinth:spell-engine:${project.spell_engine_version}")
-	modImplementation("maven.modrinth:runes:${project.runes_version}-fabric")
 	modImplementation("maven.modrinth:more-rpg-classes:${project.more_rpg_classes_version}")
 	modImplementation("mod.azure.azurelibarmor:azurelibarmor-fabric-${project.azure_mc_version}:${project.azure_lib_version}")
-	modImplementation("maven.modrinth:wizards:${project.wizards_version}")
 	include(modImplementation("maven.modrinth:structure-pool-api:${project.structure_pool_api_version}"))
 }
 

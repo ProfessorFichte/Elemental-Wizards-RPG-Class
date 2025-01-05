@@ -1,3 +1,6 @@
+2.2.1
+- Update for Spell Scrolls
+
 2.2.0
 - Spell Engine 1.2 Update
 - added the Valkyrie Elementalist Staff (Aether Variant)
