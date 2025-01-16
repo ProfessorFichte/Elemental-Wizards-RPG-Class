@@ -1,3 +1,6 @@
+1.3.1 - 1.20.1
+- forgot rpg series armor tags for netherite armor loot injection
+
 1.3.0 - 1.20.1
 - backport Netherite Armor to 1.20.1
 
