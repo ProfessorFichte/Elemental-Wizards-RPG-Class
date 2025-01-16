@@ -24,15 +24,30 @@
   "item.elemental_wizards_rpg.kelp_legs": "Aqua Robe Bottom",
   "item.elemental_wizards_rpg.kelp_feet": "Aqua Boots",
 
+  "item.elemental_wizards_rpg.netherite_kelp_head": "Netherite Aqua Hat",
+  "item.elemental_wizards_rpg.netherite_kelp_chest": "Netherite Aqua Robe Top",
+  "item.elemental_wizards_rpg.netherite_kelp_legs": "Netherite Aqua Robe Bottom",
+  "item.elemental_wizards_rpg.netherite_kelp_feet": "Netherite Aqua Boots",
+
   "item.elemental_wizards_rpg.dripstone_head": "Terra Hat",
   "item.elemental_wizards_rpg.dripstone_chest": "Terra Robe Top",
   "item.elemental_wizards_rpg.dripstone_legs": "Terra Robe Bottom",
   "item.elemental_wizards_rpg.dripstone_feet": "Terra Boots",
 
-  "item.elemental_wizards_rpg.wind_head": "Wind Hood",
+  "item.elemental_wizards_rpg.netherite_dripstone_head": "Netherite Terra Hat",
+  "item.elemental_wizards_rpg.netherite_dripstone_chest": "Netherite Terra Robe Top",
+  "item.elemental_wizards_rpg.netherite_dripstone_legs": "Netherite Terra Robe Bottom",
+  "item.elemental_wizards_rpg.netherite_dripstone_feet": "Netherite Terra Boots",
+
+  "item.elemental_wizards_rpg.wind_head": "Wind Hat",
   "item.elemental_wizards_rpg.wind_chest": "Wind Robe Top",
   "item.elemental_wizards_rpg.wind_legs": "Wind Robe Bottom",
   "item.elemental_wizards_rpg.wind_feet": "Wind Boots",
+
+  "item.elemental_wizards_rpg.netherite_wind_head": "Netherite Wind Hat",
+  "item.elemental_wizards_rpg.netherite_wind_chest": "Netherite Wind Robe Top",
+  "item.elemental_wizards_rpg.netherite_wind_legs": "Netherite Wind Robe Bottom",
+  "item.elemental_wizards_rpg.netherite_wind_feet": "Netherite Wind Boots",
 
   "item.elemental_wizards_rpg.wand_clay": "Clay Wand",
   "item.elemental_wizards_rpg.wand_terra": "Terra Wand",

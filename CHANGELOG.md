@@ -1,3 +1,6 @@
+1.3.0 - 1.20.1
+- backport Netherite Armor to 1.20.1
+
 1.2.3
 - nerfed Dripstone Circles Damage Multiplier and impact time
 - fixed the missing Wind Spell Book Advancement

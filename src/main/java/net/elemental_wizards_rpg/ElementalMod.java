@@ -31,7 +31,7 @@ public class ElementalMod implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("elemental_wizards_rpg");
 
 	public static ConfigManager<ItemConfig> itemConfig = new ConfigManager<ItemConfig>
-			("items_v2", Default.itemConfig)
+			("items_v3", Default.itemConfig)
 			.builder()
 			.setDirectory(MOD_ID)
 			.sanitize(true)
