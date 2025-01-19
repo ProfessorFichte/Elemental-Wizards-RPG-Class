@@ -3,16 +3,15 @@ package net.elemental_wizards_rpg.custom;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Vec3d;
-import net.spell_engine.api.spell.CustomSpellHandler;
+import net.spell_engine.api.spell.event.CustomSpellHandler;
 import net.spell_engine.api.spell.Spell;
-import net.spell_engine.api.spell.SpellInfo;
+import net.spell_engine.api.spell.registry.SpellRegistry;
 import net.spell_engine.internals.SpellHelper;
 import net.spell_engine.utils.TargetHelper;
 
 import java.util.List;
 import java.util.function.Predicate;
 
-import static net.spell_engine.internals.SpellRegistry.getSpell;
 import static net.elemental_wizards_rpg.ElementalMod.MOD_ID;
 
 public class CustomSpells {
@@ -22,6 +21,7 @@ public class CustomSpells {
 
         ///WATER_SPELLS
         //HIGH_TIDES
+        /*
         CustomSpellHandler.register(Identifier.of(MOD_ID, "aqua_high_tides"), (data) -> {
             SpellInfo spellinfo = new SpellInfo(getSpell(Identifier.of(MOD_ID, "aqua_high_tides")),Identifier.of(MOD_ID));
             Spell.Impact[] impacts = getSpell(Identifier.of(MOD_ID, "aqua_high_tides")).impact;
@@ -44,25 +44,28 @@ public class CustomSpells {
                         entity.playSound(SoundEvents.BLOCK_FIRE_EXTINGUISH,1,1);
                         ParticleHelper.sendBatches(entity, getSpell(new Identifier(MOD_ID, "scald")).impact[0].particles);
                         entity.extinguish();
-                    }*/
+                    }
                 }
             }
             return false;
         });
+        */
 
 
         ///EARTH_SPELLS
         //EARTHQUAKE
         CustomSpellHandler.register(Identifier.of(MOD_ID, "terra_earthquake"), (data) -> {
-            SpellInfo spellinfo = new SpellInfo(getSpell(Identifier.of(MOD_ID, "terra_earthquake")),Identifier.of(MOD_ID));
-            Spell.Impact[] impacts = getSpell(Identifier.of(MOD_ID, "terra_earthquake")).impact;
+
             CustomSpellHandler.Data data1 = (CustomSpellHandler.Data) data;
+            var spellEntry = SpellRegistry.from(data1.caster().getWorld()).getEntry(Identifier.of(MOD_ID, "terra_earthquake")).orElse(null);
+            var spell = spellEntry.value();
+            Spell.Impact[] impacts = spell.impact;
             Predicate<Entity> selectionPredicate = (target2) -> {
                 return (TargetHelper.actionAllowed(TargetHelper.TargetingMode.AREA, TargetHelper.Intent.HARMFUL, data1.caster(), target2)
                 );
             };
             if (!data1.caster().getWorld().isClient) {
-                List<Entity> list = TargetHelper.targetsFromArea(data1.caster(),getSpell(Identifier.of(MOD_ID, "terra_earthquake")).range,getSpell(Identifier.of(MOD_ID, "terra_earthquake")).release.target.area, target -> TargetHelper.allowedToHurt(data1.caster(),target) );
+                List<Entity> list = TargetHelper.targetsFromArea(data1.caster(),spell.range,spell.release.target.area, target -> TargetHelper.allowedToHurt(data1.caster(),target) );
                 for (Entity entity : list) {
                     if (entity.isLiving()){
                         double minx = -1.0;
@@ -75,7 +78,7 @@ public class CustomSpells {
                             Vec3d currentMovement = entity.getVelocity();
                             entity.setVelocity(currentMovement.x + randx, currentMovement.y + 0.1, currentMovement.z +randz);
                             entity.velocityModified = true;
-                            SpellHelper.performImpacts(entity.getWorld(), data1.caster(), entity, entity, spellinfo,impacts ,data1.impactContext());
+                            SpellHelper.performImpacts(entity.getWorld(), data1.caster(), entity, entity, spellEntry,impacts ,data1.impactContext());
                         }
 
                     }

@@ -62,6 +62,20 @@
   },
   "impact": [
     {
+      "target_conditions": [
+        {
+          "entity_type": "#more_rpg_classes:vulnerable_to_water_spells",
+          "modifier": {
+            "critical_chance_bonus": 1
+          }
+        },
+        {
+          "entity_type": "#more_rpg_classes:resistant_to_water_spells",
+          "modifier": {
+            "power_multiplier": -0.3
+          }
+        }
+      ],
       "action": {
         "type": "DAMAGE",
         "damage": {
