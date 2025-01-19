@@ -1,3 +1,7 @@
+# 2.3.1 - 1.21.1
+- Wind related Spell Effect Conditions, like the Tornado knock up will not work on bosses ("#c:bosses")
+- Earthquake Spell Effect Conditions, like the Tornado knock up will not work on bosses ("#c:bosses")
+
 # 2.3.0 - 1.21.1
 **- Spell Engine 1.4 Update!**
 - AzureLib Armor 3.0 Update!
