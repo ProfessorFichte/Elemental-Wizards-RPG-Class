@@ -1705,6 +1705,12 @@
       }
     },
     {
+      "target_conditions": [
+        {
+          "entity_type": "#minecraft:undead",
+          "allow_action": false
+        }
+      ],
       "action": {
         "type": "STATUS_EFFECT",
         "status_effect": {
@@ -1713,10 +1719,6 @@
           "apply_mode": "SET",
           "amplifier_power_multiplier": 0.2,
           "amplifier": 0,
-          "apply_limit": {
-            "health_base": 100,
-            "spell_power_multiplier": 2
-          },
           "show_particles": false
         }
       }

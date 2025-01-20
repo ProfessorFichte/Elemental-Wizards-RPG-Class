@@ -1,6 +1,8 @@
 # 2.3.1 - 1.21.1
-- Wind related Spell Effect Conditions, like the Tornado knock up will not work on bosses ("#c:bosses")
-- Earthquake Spell Effect Conditions, like the Tornado knock up will not work on bosses ("#c:bosses")
+- Wind related Spell Effect Conditions, like the Tornado knock up will not work on bosses "#c:bosses"
+- Earthquake Spell Effect Conditions, like the Tornado knock up will not work on bosses "#c:bosses"
+- The Soaked Effect cant be applied on entities with the tag "more_rpg_classes:resistant_to_to_water_spells"
+- Dripstone Circle and Stonespear Bleeding Effect cant be applied on "#minecraft:undead"
 
 # 2.3.0 - 1.21.1
 **- Spell Engine 1.4 Update!**
