@@ -5,62 +5,68 @@
   "learn": {
     "tier": 1
   },
-  "cast": {
-    "duration": 1.2,
-    "animation": "more_rpg_classes:two_handed_ground_release",
-    "sound": {
-      "id": "more_rpg_classes:earth_magic_cast1",
-      "volume": 0.5
-    },
-    "particles": [
-      {
-        "particle_id": "more_rpg_classes:stone_particle",
-        "shape": "PIPE",
-        "origin": "FEET",
-        "count": 3.0,
-        "min_speed": 0.01,
-        "max_speed": 0.05
-      }
-    ]
+
+  "active": {
+    "cast": {
+      "duration": 1.2,
+      "animation": "more_rpg_classes:two_handed_ground_release",
+      "sound": {
+        "id": "more_rpg_classes:earth_magic_cast1",
+        "volume": 0.5
+      },
+      "particles": [
+        {
+          "particle_id": "more_rpg_classes:stone_particle",
+          "shape": "PIPE",
+          "origin": "FEET",
+          "count": 3.0,
+          "min_speed": 0.01,
+          "max_speed": 0.05
+        }
+      ]
+    }
   },
-  "release": {
-    "target": {
-      "type": "PROJECTILE",
+
+  "deliver": {
+    "type": "PROJECTILE",
+    "projectile": {
+      "launch_properties": {
+        "velocity": 1.2
+      },
       "projectile": {
-        "launch_properties": {
-          "velocity": 1.2
-        },
-        "projectile": {
-          "divergence": 10,
-          "client_data": {
-            "travel_particles": [
-              {
-                "particle_id": "campfire_cosy_smoke",
-                "shape": "CIRCLE",
-                "rotation": "LOOK",
-                "origin": "CENTER",
-                "count": 0.1,
-                "min_speed": 0.6,
-                "max_speed": 0.9
-              }
-            ],
-            "model": {
-              "model_id": "elemental_wizards_rpg:projectile/stone_spear",
-              "scale": 1.1,
-              "light_emission": "NONE",
-              "render": "FLAT",
-              "rotate_degrees_per_tick": 1.3
+        "divergence": 10,
+        "client_data": {
+          "travel_particles": [
+            {
+              "particle_id": "campfire_cosy_smoke",
+              "shape": "CIRCLE",
+              "rotation": "LOOK",
+              "origin": "CENTER",
+              "count": 0.1,
+              "min_speed": 0.6,
+              "max_speed": 0.9
             }
+          ],
+          "model": {
+            "model_id": "elemental_wizards_rpg:projectile/stone_spear",
+            "scale": 1.1,
+            "light_emission": "NONE",
+            "render": "FLAT",
+            "rotate_degrees_per_tick": 1.3
           }
         }
       }
-    },
+    }
+  },
+
+  "release": {
     "animation": "spell_engine:one_handed_projectile_release",
     "sound": {
       "id": "block.pointed_dripstone.fall",
       "volume": 1.5
     }
   },
+
   "impact": [
     {
       "action": {
@@ -103,6 +109,7 @@
       ]
     }
   ],
+
   "area_impact": {
   "radius": 2.5,
   "area": {
@@ -122,8 +129,11 @@
     "id": "block.pointed_dripstone.break",
     "volume": 1.5
   }
-},
+  },
+
   "cost": {
-    "item_id": "more_rpg_classes:terra_stone"
+    "item": {
+      "id": "more_rpg_classes:terra_stone"
+    }
   }
 }

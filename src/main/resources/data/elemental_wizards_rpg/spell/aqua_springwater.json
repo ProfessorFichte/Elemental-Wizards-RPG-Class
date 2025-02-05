@@ -4,47 +4,51 @@
   "learn": {
     "tier": 2
   },
-  "cast": {
-    "duration": 1.5,
-    "animation": "spell_engine:one_handed_projectile_charge",
-    "sound": {
-      "id": "block.bubble_column.whirlpool_ambient",
-      "randomness": 0
-    },
-    "particles": [
-      {
-        "particle_id": "more_rpg_classes:big_splash",
-        "shape": "PIPE",
-        "origin": "FEET",
-        "count": 5.0,
-        "min_speed": 0.01,
-        "max_speed": 0.05
+
+  "active": {
+    "cast": {
+      "duration": 1.5,
+      "animation": "spell_engine:one_handed_projectile_charge",
+      "sound": {
+        "id": "block.bubble_column.whirlpool_ambient",
+        "randomness": 0
       },
-      {
-        "particle_id": "more_rpg_classes:splash",
-        "shape": "CIRCLE",
-        "origin": "FEET",
-        "count": 10.0,
-        "min_speed": 0.05,
-        "max_speed": 0.1
-      }
-    ]
+      "particles": [
+        {
+          "particle_id": "more_rpg_classes:big_splash",
+          "shape": "PIPE",
+          "origin": "FEET",
+          "count": 5.0,
+          "min_speed": 0.01,
+          "max_speed": 0.05
+        },
+        {
+          "particle_id": "more_rpg_classes:splash",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 10.0,
+          "min_speed": 0.05,
+          "max_speed": 0.1
+        }
+      ]
+    }
   },
+
+  "target": {
+    "type": "AREA",
+    "area": {
+      "include_caster": true,
+      "angle_degrees": 360.0
+    }
+  },
+
   "release": {
-    "custom_impact": false,
-    "target": {
-      "type": "AREA",
-      "area": {
-        "include_caster": true,
-        "distance_dropoff": "SQUARED",
-        "angle_degrees": 360.0
-      }
-    },
     "animation": "spell_engine:one_handed_projectile_release",
     "sound": {
       "id": "ambient.underwater.exit"
     }
   },
+
   "impact": [
     {
       "target_conditions": [
@@ -174,10 +178,15 @@
       }
     }
   ],
+
   "cost": {
-    "item_id": "more_rpg_classes:aqua_stone",
-    "cooldown_duration": 15,
     "exhaust" : 0.4,
-    "cooldown_haste_affected": true
+    "cooldown":{
+      "duration": 20,
+      "haste_affected": true
+    },
+    "item": {
+      "id": "more_rpg_classes:aqua_stone"
+    }
   }
 }

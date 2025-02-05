@@ -4,28 +4,33 @@
   "learn": {
     "tier": 2
   },
-  "cast": {
-    "duration": 0.75,
-    "animation": "spell_engine:one_handed_area_charge",
-    "particles": [
-      {
-        "particle_id": "more_rpg_classes:stone_particle",
-        "shape": "PIPE",
-        "origin": "FEET",
-        "count": 2.0,
-        "min_speed": 0.01,
-        "max_speed": 0.02
-      }
-    ]
+
+  "active": {
+    "cast": {
+      "duration": 0.75,
+      "animation": "spell_engine:one_handed_area_charge",
+      "particles": [
+        {
+          "particle_id": "more_rpg_classes:stone_particle",
+          "shape": "PIPE",
+          "origin": "FEET",
+          "count": 2.0,
+          "min_speed": 0.01,
+          "max_speed": 0.02
+        }
+      ]
+    }
   },
+
+  "target": {
+    "type": "AREA",
+    "area": {
+      "vertical_range_multiplier": 1.0,
+      "include_caster": true
+    }
+  },
+
   "release": {
-    "target": {
-      "type": "AREA",
-      "area": {
-        "vertical_range_multiplier": 1.0,
-        "include_caster": true
-      }
-    },
     "animation": "more_rpg_classes:two_handed_ground_release",
     "sound": {
       "id": "more_rpg_classes:earth_magic_cast1",
@@ -42,6 +47,7 @@
       }
     ]
   },
+
   "impact": [
     {
       "action": {
@@ -57,9 +63,14 @@
       }
     }
   ],
+
   "cost": {
-    "exhaust": 0.3,
-    "item_id": "more_rpg_classes:terra_stone",
-    "cooldown_duration": 20
+    "exhaust" : 0.3,
+    "cooldown":{
+      "duration": 20
+    },
+    "item": {
+      "id": "more_rpg_classes:terra_stone"
+    }
   }
 }

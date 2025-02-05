@@ -5,37 +5,46 @@
   "learn": {
     "tier": 0
   },
-  "cast": {
-    "duration": 1,
-    "animation": "spell_engine:one_handed_projectile_charge",
-    "sound": {
-      "id": "spell_engine:generic_wind_charging"
-    },
-    "particles": [
-      {
-        "particle_id": "more_rpg_classes:small_gust",
-        "shape": "PILLAR",
-        "origin": "FEET",
-        "count": 2,
-        "min_speed": 0.05,
-        "max_speed": 0.2
+
+  "active": {
+    "cast": {
+      "duration": 1,
+      "animation": "spell_engine:one_handed_projectile_charge",
+      "sound": {
+        "id": "spell_engine:generic_wind_charging"
       },
-      {
-        "particle_id": "more_rpg_classes:small_gust",
-        "shape": "CIRCLE",
-        "origin": "FEET",
-        "count": 5.0,
-        "min_speed": 0.05,
-        "max_speed": 0.2
-      }
-    ]
+      "particles": [
+        {
+          "particle_id": "more_rpg_classes:small_gust",
+          "shape": "PILLAR",
+          "origin": "FEET",
+          "count": 2,
+          "min_speed": 0.05,
+          "max_speed": 0.2
+        },
+        {
+          "particle_id": "more_rpg_classes:small_gust",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 5.0,
+          "min_speed": 0.05,
+          "max_speed": 0.2
+        }
+      ]
+    }
   },
+
+  "target": {
+    "type": "AIM",
+    "aim": {
+      "use_caster_as_fallback": true
+    }
+  },
+
   "release": {
-    "target": {
-      "type": "CURSOR"
-    },
     "animation": "spell_engine:one_handed_projectile_release"
   },
+
   "impact": [
     {
       "action": {
@@ -60,7 +69,10 @@
       }
     }
   ],
+
   "cost": {
-    "item_id": "more_rpg_classes:storm_stone"
+    "item": {
+      "id": "more_rpg_classes:storm_stone"
+    }
   }
 }

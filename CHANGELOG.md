@@ -1,3 +1,11 @@
+# 2.4.0 - 1.21.1
+- Spell Engine 1.5 Update
+- deleted unused old spells
+- bubble beam will now only give the shield to the caster
+- removed custom spell impacts, now every spell works with spell engine api options
+- increased trembling effect amplifier stun conversion
+- tweaked some cooldowns
+
 # 2.3.1 - 1.21.1
 - Wind related Spell Effect Conditions, like the Tornado knock up will not work on bosses "#c:bosses"
 - Earthquake Spell Effect Conditions, like the Tornado knock up will not work on bosses "#c:bosses"

@@ -4,34 +4,43 @@
   "learn": {
     "tier": 3
   },
-  "cast": {
-    "duration": 2.0,
-    "animation": "spell_engine:one_handed_sky_charge",
-    "particles": [
-      {
-        "particle_id": "more_rpg_classes:small_gust",
-        "shape": "PILLAR",
-        "origin": "FEET",
-        "count": 2,
-        "min_speed": 0.05,
-        "max_speed": 0.2
-      },
-      {
-        "particle_id": "more_rpg_classes:small_gust",
-        "shape": "CIRCLE",
-        "origin": "FEET",
-        "count": 5.0,
-        "min_speed": 0.05,
-        "max_speed": 0.2
-      }
-    ],
-    "channel_ticks": 4
-  },
-  "release": {
-    "target": {
-      "type": "CURSOR"
+
+  "active": {
+    "cast": {
+      "duration": 2.0,
+      "animation": "spell_engine:one_handed_sky_charge",
+      "particles": [
+        {
+          "particle_id": "more_rpg_classes:small_gust",
+          "shape": "PILLAR",
+          "origin": "FEET",
+          "count": 2,
+          "min_speed": 0.05,
+          "max_speed": 0.2
+        },
+        {
+          "particle_id": "more_rpg_classes:small_gust",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 5.0,
+          "min_speed": 0.05,
+          "max_speed": 0.2
+        }
+      ],
+      "channel_ticks": 4
     }
   },
+
+  "target": {
+    "type": "AIM",
+    "aim": {
+      "use_caster_as_fallback": true
+    }
+  },
+
+  "release": {
+  },
+
   "impact": [
     {
       "action": {
@@ -85,10 +94,15 @@
       }
     }
   ],
+
   "cost": {
-    "item_id": "more_rpg_classes:storm_stone",
-    "cooldown_duration": 20,
-    "cooldown_proportional": true,
-    "cooldown_haste_affected": true
+    "exhaust" : 0.3,
+    "cooldown":{
+      "duration": 20,
+      "proportional": true
+    },
+    "item": {
+      "id": "more_rpg_classes:storm_stone"
+    }
   }
 }

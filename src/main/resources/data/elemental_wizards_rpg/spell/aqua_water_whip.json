@@ -5,41 +5,53 @@
   "learn": {
     "tier": 1
   },
-  "cast": {
-    "duration": 1.0,
-    "animation": "spell_engine:one_handed_projectile_charge",
-    "sound": {
-      "id": "block.bubble_column.whirlpool_ambient",
-      "randomness": 0,
-      "volume": 1.0
-    },
-    "particles": [
-      {
-        "particle_id": "more_rpg_classes:big_splash",
-        "shape": "PIPE",
-        "origin": "FEET",
-        "count": 5.0,
-        "min_speed": 0.01,
-        "max_speed": 0.05
+
+  "active": {
+    "cast": {
+      "duration": 1.0,
+      "animation": "spell_engine:one_handed_projectile_charge",
+      "sound": {
+        "id": "block.bubble_column.whirlpool_ambient",
+        "randomness": 0,
+        "volume": 1.0
       },
-      {
-        "particle_id": "more_rpg_classes:splash",
-        "shape": "CIRCLE",
-        "origin": "FEET",
-        "count": 10.0,
-        "min_speed": 0.05,
-        "max_speed": 0.1
-      },
-      {
-        "particle_id": "more_rpg_classes:water_circle",
-        "shape": "CIRCLE",
-        "origin": "FEET",
-        "count": 0.1,
-        "min_speed": 0.002,
-        "max_speed": 0.003
-      }
-    ]
+      "particles": [
+        {
+          "particle_id": "more_rpg_classes:big_splash",
+          "shape": "PIPE",
+          "origin": "FEET",
+          "count": 5.0,
+          "min_speed": 0.01,
+          "max_speed": 0.05
+        },
+        {
+          "particle_id": "more_rpg_classes:splash",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 10.0,
+          "min_speed": 0.05,
+          "max_speed": 0.1
+        },
+        {
+          "particle_id": "more_rpg_classes:water_circle",
+          "shape": "CIRCLE",
+          "origin": "FEET",
+          "count": 0.1,
+          "min_speed": 0.002,
+          "max_speed": 0.003
+        }
+      ]
+    }
   },
+
+  "target": {
+    "type": "AIM",
+    "aim": {
+      "sticky": false,
+      "required": true
+    }
+  },
+
   "release": {
     "animation": "spell_engine:one_handed_projectile_release",
     "particles": [
@@ -59,11 +71,9 @@
         "min_speed": 1.0,
         "max_speed": 1.0
       }
-    ],
-    "target": {
-      "type": "CURSOR"
-    }
+    ]
   },
+
   "impact": [
     {
       "target_conditions": [
@@ -145,7 +155,10 @@
       }
     }
   ],
+
   "cost": {
-    "item_id": "more_rpg_classes:aqua_stone"
+    "item": {
+      "id": "more_rpg_classes:aqua_stone"
+    }
   }
 }

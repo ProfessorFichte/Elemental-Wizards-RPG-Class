@@ -1,7 +1,6 @@
 package net.elemental_wizards_rpg;
 
 import net.elemental_wizards_rpg.config.EffectsConfig;
-import net.elemental_wizards_rpg.custom.CustomSpells;
 import net.elemental_wizards_rpg.effect.Effects;
 import net.elemental_wizards_rpg.entity.DripstoneBigEntity;
 import net.elemental_wizards_rpg.entity.DripstoneSmallEntity;
@@ -57,7 +56,6 @@ public class ElementalMod implements ModInitializer {
 		effectsConfig.refresh();
 		ElementalItems.registerModItems();
 		ElementalGroup.registerItemGroups();
-		CustomSpells.register();
 		WeaponsRegister.register(itemConfig.value.weapons);
 		Armors.register(itemConfig.value.armor_sets);
 		itemConfig.save();
